@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather plugin\n"
-"POT-Creation-Date: 2013-01-18 10:12+0100\n"
+"POT-Creation-Date: 2013-01-19 18:17+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Appcuarium <apps@appcuarium.com>\n"
@@ -121,6 +121,202 @@ msgstr ""
 
 #: alfie-wp-weather.php:265
 msgid "Show forecast?"
+msgstr ""
+
+#: getfeed.php:58
+msgid "Sunday"
+msgstr ""
+
+#: getfeed.php:62
+msgid "Monday"
+msgstr ""
+
+#: getfeed.php:66
+msgid "Tuesday"
+msgstr ""
+
+#: getfeed.php:70
+msgid "Wednesday"
+msgstr ""
+
+#: getfeed.php:74
+msgid "Thursday"
+msgstr ""
+
+#: getfeed.php:78
+msgid "Friday"
+msgstr ""
+
+#: getfeed.php:82
+msgid "Saturday"
+msgstr ""
+
+#: getfeed.php:97
+msgid "Tornado"
+msgstr ""
+
+#: getfeed.php:101
+msgid "Tropical Storm"
+msgstr ""
+
+#: getfeed.php:105
+msgid "Hurricane"
+msgstr ""
+
+#: getfeed.php:109
+msgid "Severe Thunderstorms"
+msgstr ""
+
+#: getfeed.php:113
+msgid "Thunderstorms"
+msgstr ""
+
+#: getfeed.php:117
+msgid "Mixed Rain and Snow"
+msgstr ""
+
+#: getfeed.php:121
+msgid "Mixed Rain and Sleet"
+msgstr ""
+
+#: getfeed.php:125
+msgid "Mixed Snow and Sleet"
+msgstr ""
+
+#: getfeed.php:129
+msgid "Freezing Drizzle"
+msgstr ""
+
+#: getfeed.php:133
+msgid "Drizzle"
+msgstr ""
+
+#: getfeed.php:137
+msgid "Freezing Rain"
+msgstr ""
+
+#: getfeed.php:141 getfeed.php:145
+msgid "Showers"
+msgstr ""
+
+#: getfeed.php:149
+msgid "Snow flurries"
+msgstr ""
+
+#: getfeed.php:153
+msgid "Light Snow Showers"
+msgstr ""
+
+#: getfeed.php:157
+msgid "Blowing Snow"
+msgstr ""
+
+#: getfeed.php:161
+msgid "Snow"
+msgstr ""
+
+#: getfeed.php:165
+msgid "Hail"
+msgstr ""
+
+#: getfeed.php:169
+msgid "Sleet"
+msgstr ""
+
+#: getfeed.php:173
+msgid "Dust"
+msgstr ""
+
+#: getfeed.php:177
+msgid "Foggy"
+msgstr ""
+
+#: getfeed.php:181
+msgid "Haze"
+msgstr ""
+
+#: getfeed.php:185
+msgid "Smoky"
+msgstr ""
+
+#: getfeed.php:189
+msgid "Blustery"
+msgstr ""
+
+#: getfeed.php:193
+msgid "Windy"
+msgstr ""
+
+#: getfeed.php:197
+msgid "Cold"
+msgstr ""
+
+#: getfeed.php:201
+msgid "Cloudy"
+msgstr ""
+
+#: getfeed.php:205 getfeed.php:209
+msgid "Mostly Cloudy"
+msgstr ""
+
+#: getfeed.php:213 getfeed.php:217 getfeed.php:273
+msgid "Partly Cloudy"
+msgstr ""
+
+#: getfeed.php:221
+msgid "Clear"
+msgstr ""
+
+#: getfeed.php:225
+msgid "Sunny"
+msgstr ""
+
+#: getfeed.php:229 getfeed.php:233
+msgid "Fair"
+msgstr ""
+
+#: getfeed.php:237
+msgid "Mixed Rain and Hail"
+msgstr ""
+
+#: getfeed.php:241
+msgid "Hot"
+msgstr ""
+
+#: getfeed.php:245
+msgid "Isolated Thunderstorms"
+msgstr ""
+
+#: getfeed.php:249 getfeed.php:253
+msgid "Scattered Thunderstorms"
+msgstr ""
+
+#: getfeed.php:257
+msgid "Scattered Showers"
+msgstr ""
+
+#: getfeed.php:261 getfeed.php:269
+msgid "Heavy Snow"
+msgstr ""
+
+#: getfeed.php:265
+msgid "Scattered Snow Showers"
+msgstr ""
+
+#: getfeed.php:277
+msgid "Thundershowers"
+msgstr ""
+
+#: getfeed.php:281
+msgid "Snow Showers"
+msgstr ""
+
+#: getfeed.php:285
+msgid "Isolated Thundershowers"
+msgstr ""
+
+#: getfeed.php:289
+msgid "Not Available"
 msgstr ""
 
 #: index.php:32

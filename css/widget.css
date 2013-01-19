@@ -1,3 +1,9 @@
+/*
+	
+	Alfie WP Weather Widget Styling
+
+*/
+
 .alfie-container {
 	color: black!important;
 	font-family: Arial, Helvetica, sans-serif;
@@ -19,9 +25,10 @@
 	font-size: 9px; 
 	line-height: 14px;
 }
-.alfie-city { text-transform: uppercase; }
+.alfie-city { text-transform: uppercase;}
 .alfie-country {
 	margin-bottom: 5px;
+	font-size: 11px;
 }
 .alfie-temperature {
 	font-size: 2.8em;
@@ -35,7 +42,7 @@
 .degrees {
 	font-size: 12px;
 }
-.alfie-description, .alfie-city  { font-weight: bold; }
+.alfie-description, .alfie-city  { font-weight: bold; font-size: 11px; }
 
 .alfie-wp-weather-forecast-item {
 	background-color: transparent;
@@ -48,7 +55,8 @@
 .alfie-wp-weather-forecast-day { 
 	text-align: center;
 	margin-bottom: 20px;
-	font-size: 10px;
+	font-size: 11px;
+	font-weight: bold;
 	padding-bottom: 20px;
 }
 

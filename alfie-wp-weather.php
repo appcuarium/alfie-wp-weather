@@ -103,10 +103,10 @@ class alfie_wp_weather_widget extends WP_Widget {
 		
 		if ( is_active_widget( false, false, $this->id_base ) ) {
 			
-			wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.css' );	
+			wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );	
 			wp_enqueue_script( 'jquery' );
-			wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.js' );
-			wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.js' );	
+			wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
+			wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );	
 			
 		}
 	}
@@ -164,9 +164,9 @@ class alfie_wp_weather_widget extends WP_Widget {
 	}	
 
 	function form( $instance ) {
-		wp_enqueue_style( 'alfie_weatheroptions', ALFIE_WEATHER_URL . 'css/admin.css', false, 0.7, 'screen' );	
-		wp_enqueue_script( 'alfie-wp-weatherclass_admin', ALFIE_WEATHER_URL . 'js/alfie.weather.js' );
-		wp_enqueue_script( 'alfie-wp-weather_admin', ALFIE_WEATHER_URL . 'js/alfie-weather.js' );	
+		wp_enqueue_style( 'alfie_weatheroptions', ALFIE_WEATHER_URL . 'css/admin.min.css', false, 0.7, 'screen' );	
+		wp_enqueue_script( 'alfie-wp-weatherclass_admin', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
+		wp_enqueue_script( 'alfie-wp-weather_admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );	
 			
 		$defaults = array(
 			'title' => __( 'Local Weather', 'alfie_wp_weather' ),

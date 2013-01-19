@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather\n"
-"POT-Creation-Date: 2013-01-18 10:12+0100\n"
+"POT-Creation-Date: 2013-01-19 18:30+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Appcuarium <apps@appcuarium.com>\n"
@@ -41,11 +41,11 @@ msgstr "Visibilidad"
 
 #: alfie-wp-weather.php:36
 msgid "Sunrise"
-msgstr "Levante"
+msgstr "Amanecer"
 
 #: alfie-wp-weather.php:39
 msgid "Sunset"
-msgstr "Poniente"
+msgstr "Anochecer"
 
 #: alfie-wp-weather.php:100
 msgid "Alfie WP Weather widget."
@@ -122,6 +122,202 @@ msgstr "¿Mostrar info puesta del sol?"
 #: alfie-wp-weather.php:265
 msgid "Show forecast?"
 msgstr "¿Mostrar previsión?"
+
+#: getfeed.php:58
+msgid "Sunday"
+msgstr "Domingo"
+
+#: getfeed.php:62
+msgid "Monday"
+msgstr "Lunes"
+
+#: getfeed.php:66
+msgid "Tuesday"
+msgstr "Martes"
+
+#: getfeed.php:70
+msgid "Wednesday"
+msgstr "Miercoles"
+
+#: getfeed.php:74
+msgid "Thursday"
+msgstr "Jueves"
+
+#: getfeed.php:78
+msgid "Friday"
+msgstr "Viernes"
+
+#: getfeed.php:82
+msgid "Saturday"
+msgstr "Sábado"
+
+#: getfeed.php:97
+msgid "Tornado"
+msgstr "Tornado"
+
+#: getfeed.php:101
+msgid "Tropical Storm"
+msgstr "Tormenta Tropical"
+
+#: getfeed.php:105
+msgid "Hurricane"
+msgstr "Huracán"
+
+#: getfeed.php:109
+msgid "Severe Thunderstorms"
+msgstr "Tormentas Severas"
+
+#: getfeed.php:113
+msgid "Thunderstorms"
+msgstr "Tormentas"
+
+#: getfeed.php:117
+msgid "Mixed Rain and Snow"
+msgstr "Lluvia y Nieve"
+
+#: getfeed.php:121
+msgid "Mixed Rain and Sleet"
+msgstr "Lluvia y Aguanieve"
+
+#: getfeed.php:125
+msgid "Mixed Snow and Sleet"
+msgstr "Nieve y aguanieve"
+
+#: getfeed.php:129
+msgid "Freezing Drizzle"
+msgstr "Llovizna Helada"
+
+#: getfeed.php:133
+msgid "Drizzle"
+msgstr "Llovizna"
+
+#: getfeed.php:137
+msgid "Freezing Rain"
+msgstr "Lluvia Helada"
+
+#: getfeed.php:141 getfeed.php:145
+msgid "Showers"
+msgstr "Lluvias"
+
+#: getfeed.php:149
+msgid "Snow Flurries"
+msgstr "Copos de Nieve"
+
+#: getfeed.php:153
+msgid "Light Snow Showers"
+msgstr "Nevadas ligeras"
+
+#: getfeed.php:157
+msgid "Blowing Snow"
+msgstr "Viento y Nieve"
+
+#: getfeed.php:161
+msgid "Snow"
+msgstr "Nieve"
+
+#: getfeed.php:165
+msgid "Hail"
+msgstr "Granizo"
+
+#: getfeed.php:169
+msgid "Sleet"
+msgstr "Aguanieve"
+
+#: getfeed.php:173
+msgid "Dust"
+msgstr "Polvo"
+
+#: getfeed.php:177
+msgid "Foggy"
+msgstr "Niebla"
+
+#: getfeed.php:181
+msgid "Haze"
+msgstr "Neblina"
+
+#: getfeed.php:185
+msgid "Smoky"
+msgstr "Ahumado"
+
+#: getfeed.php:189
+msgid "Blustery"
+msgstr "Tempestuoso"
+
+#: getfeed.php:193
+msgid "Windy"
+msgstr "Ventoso"
+
+#: getfeed.php:197
+msgid "Cold"
+msgstr "Frio"
+
+#: getfeed.php:201
+msgid "Cloudy"
+msgstr "Nublado"
+
+#: getfeed.php:205 getfeed.php:209
+msgid "Mostly Cloudy"
+msgstr "Mayormente Nublado"
+
+#: getfeed.php:213 getfeed.php:217 getfeed.php:273
+msgid "Partly Cloudy"
+msgstr "Parcialmente Nublado"
+
+#: getfeed.php:221
+msgid "Clear"
+msgstr "Despejado"
+
+#: getfeed.php:225
+msgid "Sunny"
+msgstr "Soleado"
+
+#: getfeed.php:229 getfeed.php:233
+msgid "Fair"
+msgstr "Buen Tiempo"
+
+#: getfeed.php:237
+msgid "Mixed Rain and Hail"
+msgstr "Lluvia y Granizo"
+
+#: getfeed.php:241
+msgid "Hot"
+msgstr "Calor"
+
+#: getfeed.php:245
+msgid "Isolated Thunderstorms"
+msgstr "Tormentas Aisladas"
+
+#: getfeed.php:249 getfeed.php:253
+msgid "Scattered Thunderstorms"
+msgstr "Tormentas Dispersas"
+
+#: getfeed.php:257
+msgid "Scattered Showers"
+msgstr "Lluvias Dispersas"
+
+#: getfeed.php:261 getfeed.php:269
+msgid "Heavy Snow"
+msgstr "Nieve Abundante"
+
+#: getfeed.php:265
+msgid "Scattered Snow Showers"
+msgstr "Chubascos de Nieve Aislados"
+
+#: getfeed.php:277
+msgid "Thundershowers"
+msgstr "Tormentas"
+
+#: getfeed.php:281
+msgid "Snow Showers"
+msgstr "Chubascos de nieve"
+
+#: getfeed.php:285
+msgid "Isolated Thundershowers"
+msgstr "Tormentas Aisladas"
+
+#: getfeed.php:289
+msgid "Not Available"
+msgstr "No disponible"
 
 #: index.php:32
 msgid "Add weather forecasts to your WP website."

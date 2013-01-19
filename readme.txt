@@ -4,7 +4,7 @@ Donate link:
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,13 +26,23 @@ No questions for now...
 
 == Screenshots ==
 
-1. Widget night view
-2. Widget day view
-3. Widget location search
+1. Site widget night view
+2. Site widget day view
+3. Dashboard widget location search
 
 == Changelog ==
 
-Nothing for now...
+= 1.0.2 =
+
+* Added localization for weather condition and forecast week days names.
+* Updated main .po file to reflect the latest localization data.
+* Updated Spanish translation.
+* Added minified CSS files.
+* Added minified JS files.
+
+= 1.0.1 =
+
+* Fixed minor display bugs.
 
 == Upgrade notice ==
 

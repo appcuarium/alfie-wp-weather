@@ -159,9 +159,9 @@ if ( typeof Object.create !== 'function' ) {
             	widgetEnvelope = $( '<ul />', {
                 	class: 'loaded'
                 });
+                
+            var obj = $.map( results, function ( result, i ) {
 
-            var obj = $.map( results.query.results, function ( result, i ) {
-	            
 	            // Day or night?
 				wpd = result.item.pubDate;
 				n = wpd.indexOf(":");
@@ -182,8 +182,8 @@ if ( typeof Object.create !== 'function' ) {
                 	.replace(/{{condition_code}}/ig, result.item.condition.code)
                 	.replace(/{{daynight}}/ig, daynight.substring(0,1))
                 	.replace(/{{condition}}/ig, result.item.condition.text)
-                	.replace(/{{high}}/ig, result.item.forecast[0].high)
-                	.replace(/{{low}}/ig, result.item.forecast[0].low)
+                	.replace(/{{high}}/ig, result.item.forecast.today.high)
+                	.replace(/{{low}}/ig, result.item.forecast.today.low)
                 	.replace(/{{wind}}/ig, result.wind.speed)
                 	.replace(/{{wind_direction}}/ig, wd)
                 	.replace(/{{speed_unit}}/ig, result.units.speed)
@@ -194,14 +194,14 @@ if ( typeof Object.create !== 'function' ) {
                 	.replace(/{{visibility}}/ig, result.atmosphere.visibility)
                 	.replace(/{{sunrise}}/ig, result.astronomy.sunrise)
                 	.replace(/{{sunset}}/ig, result.astronomy.sunset)
-                	.replace(/{{day_one}}/ig, result.item.forecast[0].day)
-                	.replace(/{{day_two}}/ig, result.item.forecast[1].day)
-                	.replace(/{{forecast_one_high}}/ig, result.item.forecast[0].high)
-                	.replace(/{{forecast_one_low}}/ig, result.item.forecast[0].low)
-                	.replace(/{{forecast_two_high}}/ig, result.item.forecast[1].high)
-                	.replace(/{{forecast_two_low}}/ig, result.item.forecast[1].low)
-                	.replace(/{{forecast_one_code}}/ig, result.item.forecast[0].code)
-                	.replace(/{{forecast_two_code}}/ig, result.item.forecast[1].code)
+                	.replace(/{{day_one}}/ig, result.item.forecast.today.day)
+                	.replace(/{{day_two}}/ig, result.item.forecast.tomorrow.day)
+                	.replace(/{{forecast_one_high}}/ig, result.item.forecast.today.high)
+                	.replace(/{{forecast_one_low}}/ig, result.item.forecast.today.low)
+                	.replace(/{{forecast_two_high}}/ig, result.item.forecast.tomorrow.high)
+                	.replace(/{{forecast_two_low}}/ig, result.item.forecast.tomorrow.low)
+                	.replace(/{{forecast_one_code}}/ig, result.item.forecast.today.code)
+                	.replace(/{{forecast_two_code}}/ig, result.item.forecast.tomorrow.code)
                 	.replace(/{{yahoo_logo}}/ig, result.image.url);
 				
                	var results = $( '.alfie-container' ).html( widgetHTML )[0];
