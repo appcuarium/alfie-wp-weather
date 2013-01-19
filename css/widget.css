@@ -5,8 +5,9 @@
 */
 
 .alfie-container {
-	color: black!important;
+	color: #000!important;
 	font-family: Arial, Helvetica, sans-serif;
+	list-style: none;
 }
 
 .alfie-container a { color: #888; }
