@@ -43,7 +43,7 @@
 .degrees {
 	font-size: 12px;
 }
-.alfie-description, .alfie-city  { font-weight: bold; font-size: 11px; }
+.alfie-description, .alfie-city  { font-weight: bold; font-size: 12px; }
 
 .alfie-wp-weather-forecast-item {
 	background-color: transparent;

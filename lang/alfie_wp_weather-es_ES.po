@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather\n"
-"POT-Creation-Date: 2013-01-19 18:30+0100\n"
+"POT-Creation-Date: 2013-01-19 20:10+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Appcuarium <apps@appcuarium.com>\n"
@@ -85,7 +85,7 @@ msgstr "Temperatura"
 
 #: alfie-wp-weather.php:229
 msgid "Show image?"
-msgstr "¿Mostrar imágen?"
+msgstr "¿Mostrar imagen?"
 
 #: alfie-wp-weather.php:233
 msgid "Show country?"
@@ -113,11 +113,11 @@ msgstr "¿Mostrar info visibilidad?"
 
 #: alfie-wp-weather.php:257
 msgid "Show sunrise info?"
-msgstr "¿Mostrar info salida del sol?"
+msgstr "¿Mostrar info amanecer?"
 
 #: alfie-wp-weather.php:261
 msgid "Show sunset info?"
-msgstr "¿Mostrar info puesta del sol?"
+msgstr "¿Mostrar info anochecer?"
 
 #: alfie-wp-weather.php:265
 msgid "Show forecast?"
@@ -137,7 +137,7 @@ msgstr "Martes"
 
 #: getfeed.php:70
 msgid "Wednesday"
-msgstr "Miercoles"
+msgstr "Miércoles"
 
 #: getfeed.php:74
 msgid "Thursday"
@@ -185,7 +185,7 @@ msgstr "Nieve y aguanieve"
 
 #: getfeed.php:129
 msgid "Freezing Drizzle"
-msgstr "Llovizna Helada"
+msgstr "Llovizna"
 
 #: getfeed.php:133
 msgid "Drizzle"
@@ -193,7 +193,7 @@ msgstr "Llovizna"
 
 #: getfeed.php:137
 msgid "Freezing Rain"
-msgstr "Lluvia Helada"
+msgstr "Lluvia"
 
 #: getfeed.php:141 getfeed.php:145
 msgid "Showers"
@@ -205,7 +205,7 @@ msgstr "Copos de Nieve"
 
 #: getfeed.php:153
 msgid "Light Snow Showers"
-msgstr "Nevadas ligeras"
+msgstr "Nevadas Ligeras"
 
 #: getfeed.php:157
 msgid "Blowing Snow"
@@ -257,7 +257,7 @@ msgstr "Nublado"
 
 #: getfeed.php:205 getfeed.php:209
 msgid "Mostly Cloudy"
-msgstr "Mayormente Nublado"
+msgstr "Muy Nublado"
 
 #: getfeed.php:213 getfeed.php:217 getfeed.php:273
 msgid "Partly Cloudy"
@@ -301,7 +301,7 @@ msgstr "Nieve Abundante"
 
 #: getfeed.php:265
 msgid "Scattered Snow Showers"
-msgstr "Chubascos de Nieve Aislados"
+msgstr "Nevadas Aisladas"
 
 #: getfeed.php:277
 msgid "Thundershowers"
@@ -309,7 +309,7 @@ msgstr "Tormentas"
 
 #: getfeed.php:281
 msgid "Snow Showers"
-msgstr "Chubascos de nieve"
+msgstr "Nevadas"
 
 #: getfeed.php:285
 msgid "Isolated Thundershowers"
