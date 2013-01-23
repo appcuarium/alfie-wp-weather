@@ -57,7 +57,7 @@ function alfie_wp_weather( $options ) {
 				<div class="alfie-wp-weather-footer">
 					<ul>
 						<li class="left"><img title="{{yahoo_logo_title}}" src="{{yahoo_logo}}" width="80"></li>
-						<li class="right">powered by&nbsp;<a href="http://www.appcuarium.com" target="_balnk"><strong>appcuarium</strong></a></li>
+						<li class="right">powered by <a href="http://www.appcuarium.com" target="_blank"><strong>appcuarium</strong></a></li>
 					</ul>
 				</div>
 				
