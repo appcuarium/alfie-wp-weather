@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.1
+@version 1.0
 									
 ====================================
 
@@ -24,6 +24,33 @@ header('Content-type: application/json');
 
 // Load WP classes so we can translate the strings usin WordPress native double underscore function
 require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php' );
+
+// Get the locale value from the AJAX call
+$locale = $_GET['locale'];
+switch ( $locale ) {
+		
+		case 'en_US':
+        $locale = 'en';
+        break;
+        
+        case 'es_ES':
+        $locale = 'es';
+        break;
+        
+        case 'ro_RO':
+        $locale = 'ro';
+        break;
+
+
+}
+// Load the WPML global object
+global $sitepress;
+
+//Change language to call language
+$sitepress->switch_lang( $locale, true );
+
+// Load textomain locally
+load_plugin_textdomain( 'alfie_wp_weather', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 
 // Create date to append to the API call URL so it caches for an hour
 $random = date( 'Ymdh' );

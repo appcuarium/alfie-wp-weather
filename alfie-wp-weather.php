@@ -10,7 +10,7 @@ function alfie_wp_weather( $options ) {
 ?>
 <div id="dummy"></div>
 <script id="widget-template" type="alfie/appcuarium">
-			<div class="alfie-wp-weather-object {{daynight}}" style="background-image: url(http://l.yimg.com/a/i/us/nws/weather/gr/{{condition_code}}{{daynight}}.png); background-repeat: no-repeat;">
+			<div class="alfie-wp-weather-object {{daynight}}" style="background-image: url({{image_bg}}{{daynight}}.png); background-repeat: no-repeat;">
 			<div class="weather-main-info">
 				<div class="alfie-wp-weather-item alfie-city">{{city}}</div>
 				<?php if ( $options['alfie_wp_weather_country'] ) { ?>
@@ -81,7 +81,8 @@ jQuery(function () {
 					visibility: <?php echo $options['alfie_wp_weather_visibility']; ?>,
 					sunrise: <?php echo $options['alfie_wp_weather_sunrise']; ?>,
 					sunset: <?php echo $options['alfie_wp_weather_sunset']; ?>,
-					forecast: <?php echo $options['alfie_wp_weather_forecast']; ?>
+					forecast: <?php echo $options['alfie_wp_weather_forecast']; ?>,
+					locale: '<?php echo get_locale();?>'
 				}
 			}
 		}
@@ -94,9 +95,7 @@ jQuery(function () {
 class alfie_wp_weather_widget extends WP_Widget {
 	
 	function __construct() {
-		
-		add_action( 'load-widgets.php', array( $this, 'alfie_weather_style' ) );
-		
+				
 		$widget_options = array( 'classname' => 'alfie_wp_weather', 'description' => __( 'Alfie WP Weather widget.', 'alfie_wp_weather' ) );
 		
 		$this->WP_Widget( 'alfie-wp-weather', 'Alfie WP Weather', $widget_options );
@@ -110,7 +109,7 @@ class alfie_wp_weather_widget extends WP_Widget {
 			
 		}
 	}
-    
+	
 	function widget( $args, $instance ) {
 		extract( $args );
 

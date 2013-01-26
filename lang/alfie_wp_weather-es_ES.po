@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather\n"
-"POT-Creation-Date: 2013-01-19 20:10+0100\n"
+"POT-Creation-Date: 2013-01-26 15:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Appcuarium <apps@appcuarium.com>\n"
@@ -47,79 +47,79 @@ msgstr "Amanecer"
 msgid "Sunset"
 msgstr "Anochecer"
 
-#: alfie-wp-weather.php:100
+#: alfie-wp-weather.php:98
 msgid "Alfie WP Weather widget."
 msgstr "El Widget Alfie WP Weather."
 
-#: alfie-wp-weather.php:172
+#: alfie-wp-weather.php:170
 msgid "Local Weather"
 msgstr "El tiempo"
 
-#: alfie-wp-weather.php:189
+#: alfie-wp-weather.php:187
 msgid "Celsius"
 msgstr "Celsius"
 
-#: alfie-wp-weather.php:189
+#: alfie-wp-weather.php:187
 msgid "Fahreinheit"
 msgstr "Fahreinheit"
 
-#: alfie-wp-weather.php:198
+#: alfie-wp-weather.php:196
 msgid "Title:"
 msgstr "Título:"
 
-#: alfie-wp-weather.php:203
+#: alfie-wp-weather.php:201
 msgid "WOEID:"
 msgstr "WOEID:"
 
-#: alfie-wp-weather.php:209
+#: alfie-wp-weather.php:207
 msgid "Search for a location:"
 msgstr "Buscar un sitio:"
 
-#: alfie-wp-weather.php:212
+#: alfie-wp-weather.php:210
 msgid "Click to search location"
 msgstr "Click para buscar sitio"
 
-#: alfie-wp-weather.php:220
+#: alfie-wp-weather.php:218
 msgid "Temperature"
 msgstr "Temperatura"
 
-#: alfie-wp-weather.php:229
+#: alfie-wp-weather.php:227
 msgid "Show image?"
 msgstr "¿Mostrar imagen?"
 
-#: alfie-wp-weather.php:233
+#: alfie-wp-weather.php:231
 msgid "Show country?"
 msgstr "¿Mostrar país?"
 
-#: alfie-wp-weather.php:237
+#: alfie-wp-weather.php:235
 msgid "Show condition?"
 msgstr "¿Mostrar tiempo?"
 
-#: alfie-wp-weather.php:241
+#: alfie-wp-weather.php:239
 msgid "Show High/Low info?"
 msgstr "¿Mostrar Máxima/Mínima?"
 
-#: alfie-wp-weather.php:245
+#: alfie-wp-weather.php:243
 msgid "Show wind info?"
 msgstr "¿Mostrar info viento?"
 
-#: alfie-wp-weather.php:249
+#: alfie-wp-weather.php:247
 msgid "Show humidity info?"
 msgstr "¿Mostrar info humedad?"
 
-#: alfie-wp-weather.php:253
+#: alfie-wp-weather.php:251
 msgid "Show visibility info?"
 msgstr "¿Mostrar info visibilidad?"
 
-#: alfie-wp-weather.php:257
+#: alfie-wp-weather.php:255
 msgid "Show sunrise info?"
 msgstr "¿Mostrar info amanecer?"
 
-#: alfie-wp-weather.php:261
+#: alfie-wp-weather.php:259
 msgid "Show sunset info?"
 msgstr "¿Mostrar info anochecer?"
 
-#: alfie-wp-weather.php:265
+#: alfie-wp-weather.php:263
 msgid "Show forecast?"
 msgstr "¿Mostrar previsión?"
 
@@ -273,7 +273,7 @@ msgstr "Soleado"
 
 #: getfeed.php:229 getfeed.php:233
 msgid "Fair"
-msgstr "Buen Tiempo"
+msgstr "Despejado"
 
 #: getfeed.php:237
 msgid "Mixed Rain and Hail"
@@ -319,6 +319,6 @@ msgstr "Tormentas Aisladas"
 msgid "Not Available"
 msgstr "No disponible"
 
-#: index.php:32
+#: index.php:33
 msgid "Add weather forecasts to your WP website."
 msgstr "Añade la información del tiempo a WordPress con estilo."
