@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0
+@version 1.0.5
 									
 ====================================
 
@@ -46,8 +46,12 @@ switch ( $locale ) {
 // Load the WPML global object
 global $sitepress;
 
-//Change language to call language
-$sitepress->switch_lang( $locale, true );
+//Change language to call language fi WMPL is active
+if ( $sitepress ) {
+
+	$sitepress->switch_lang( $locale, true );
+
+}
 
 // Load textomain locally
 load_plugin_textdomain( 'alfie_wp_weather', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
@@ -323,6 +327,7 @@ function translate_condition( $condition ) {
 }        
         // Rebuild the array, including now the localized values
         $result = array('data' => array(
+        	'woeid' => $woeid,
         	'title' => $object->title,
         	'link' => $object->link,
         	'description' => $object->description,

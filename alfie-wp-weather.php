@@ -1,7 +1,7 @@
 <?php
 /**
 
-	Alfie WP Weather Widget 1.0
+	Alfie WP Weather Widget 1.0.5
 
 */
 
@@ -54,40 +54,42 @@ function alfie_wp_weather( $options ) {
 					</div>
 				</div>
 				<?php } ?>
+				<?php if ( $options['alfie_wp_weather_credits'] ) { ?>
 				<div class="alfie-wp-weather-footer">
 					<ul>
 						<li class="left"><img title="{{yahoo_logo_title}}" src="{{yahoo_logo}}" width="80"></li>
 						<li class="right">powered by <a href="http://www.appcuarium.com" target="_blank"><strong>appcuarium</strong></a></li>
 					</ul>
 				</div>
-				
+				<?php } ?>
 			</div>
 		</script>
 <script>
-jQuery(function () {
-
-		var $me = jQuery('body');
+( function ( $, window, document, undefined ) {
+	$( function () {
+		var $me = $( 'body' );
 		$me.alfie({
-		action: {
-			get_weather: {
-				params: {
-					woeid: <?php echo $options['woeid']; ?>,
-					unit: '<?php echo $options['alfie_wp_weather_temperature']; ?>',
-					image: <?php echo $options['alfie_wp_weather_image']; ?>,
-					country: <?php echo $options['alfie_wp_weather_country']; ?>,
-					highlow: <?php echo $options['alfie_wp_weather_highlow']; ?>,
-					wind: <?php echo $options['alfie_wp_weather_wind']; ?>,
-					humidity: <?php echo $options['alfie_wp_weather_humidity']; ?>,
-					visibility: <?php echo $options['alfie_wp_weather_visibility']; ?>,
-					sunrise: <?php echo $options['alfie_wp_weather_sunrise']; ?>,
-					sunset: <?php echo $options['alfie_wp_weather_sunset']; ?>,
-					forecast: <?php echo $options['alfie_wp_weather_forecast']; ?>,
-					locale: '<?php echo get_locale();?>'
+			action: {
+				get_weather: {
+					params: {
+						woeid: <?php echo $options['woeid']; ?>,
+						unit: '<?php echo $options['alfie_wp_weather_temperature']; ?>',
+						image: <?php echo $options['alfie_wp_weather_image']; ?>,
+						country: <?php echo $options['alfie_wp_weather_country']; ?>,
+						highlow: <?php echo $options['alfie_wp_weather_highlow']; ?>,
+						wind: <?php echo $options['alfie_wp_weather_wind']; ?>,
+						humidity: <?php echo $options['alfie_wp_weather_humidity']; ?>,
+						visibility: <?php echo $options['alfie_wp_weather_visibility']; ?>,
+						sunrise: <?php echo $options['alfie_wp_weather_sunrise']; ?>,
+						sunset: <?php echo $options['alfie_wp_weather_sunset']; ?>,
+						forecast: <?php echo $options['alfie_wp_weather_forecast']; ?>,
+						locale: '<?php echo get_locale();?>'
+					}
 				}
 			}
-		}
+		});
 	});
-});
+})( jQuery, window, document );
 </script>
 <?php
 }
@@ -126,7 +128,8 @@ class alfie_wp_weather_widget extends WP_Widget {
 			'alfie_wp_weather_visibility'		=> !empty( $instance['alfie_wp_weather_visibility'] ) ? 1 : 0,
 			'alfie_wp_weather_sunrise'		=> !empty( $instance['alfie_wp_weather_sunrise'] ) ? 1 : 0,
 			'alfie_wp_weather_sunset'		=> !empty( $instance['alfie_wp_weather_sunset'] ) ? 1 : 0,
-			'alfie_wp_weather_forecast'		=> !empty( $instance['alfie_wp_weather_forecast'] ) ? 1 : 0
+			'alfie_wp_weather_forecast'		=> !empty( $instance['alfie_wp_weather_forecast'] ) ? 1 : 0,
+			'alfie_wp_weather_credits'		=> !empty( $instance['alfie_wp_weather_credits'] ) ? 1 : 0
 		
 		); 
 		
@@ -135,9 +138,9 @@ class alfie_wp_weather_widget extends WP_Widget {
 		if ( !empty( $instance['title'] ) ) {
 			echo $before_title . apply_filters( 'widget_title',  $instance['title'], $instance, $this->id_base ) . $after_title;
 		}
-		echo '<li class="widget-container alfie-container">';
+		echo '<div id="woeid-'.$args['woeid'].'" class="widget-container alfie-container">';
 		alfie_wp_weather( $args );
-		echo '</li>';
+		echo '</div>';
 		echo $after_widget;
 		
 	}
@@ -159,6 +162,7 @@ class alfie_wp_weather_widget extends WP_Widget {
 		$instance['alfie_wp_weather_sunrise'] = ( isset( $new_instance['alfie_wp_weather_sunrise'] ) ? 1 : 0 );
 		$instance['alfie_wp_weather_sunset'] = ( isset( $new_instance['alfie_wp_weather_sunset'] ) ? 1 : 0 );
 		$instance['alfie_wp_weather_forecast'] = ( isset( $new_instance['alfie_wp_weather_forecast'] ) ? 1 : 0 );
+		$instance['alfie_wp_weather_credits'] = ( isset( $new_instance['alfie_wp_weather_credits'] ) ? 1 : 0 );
 		return $instance;
 	}	
 
@@ -180,7 +184,8 @@ class alfie_wp_weather_widget extends WP_Widget {
 			'alfie_wp_weather_visibility' => true,
 			'alfie_wp_weather_sunrise' => true,
 			'alfie_wp_weather_sunset' => true,
-			'alfie_wp_weather_forecast' => true
+			'alfie_wp_weather_forecast' => true,
+			'alfie_wp_weather_credits' => true
 		);
 
 		$instance = wp_parse_args( (array) $instance, $defaults );
@@ -262,6 +267,10 @@ class alfie_wp_weather_widget extends WP_Widget {
 			<p>
 				<label for="<?php echo $this->get_field_id( 'alfie_wp_weather_forecast' ); ?>">
 				<input class="checkbox" type="checkbox" <?php checked( $instance['alfie_wp_weather_forecast'], true ); ?> id="<?php echo $this->get_field_id( 'alfie_wp_weather_forecast' ); ?>" name="<?php echo $this->get_field_name( 'alfie_wp_weather_forecast' ); ?>" /> <?php _e( 'Show forecast?', 'alfie_wp_weather' ); ?></label>
+			</p>
+			<p>
+				<label for="<?php echo $this->get_field_id( 'alfie_wp_weather_credits' ); ?>">
+				<input class="checkbox" type="checkbox" <?php checked( $instance['alfie_wp_weather_credits'], true ); ?> id="<?php echo $this->get_field_id( 'alfie_wp_weather_credits' ); ?>" name="<?php echo $this->get_field_name( 'alfie_wp_weather_credits' ); ?>" /> <?php _e( 'Show credits footer?', 'alfie_wp_weather' ); ?></label>
 			</p>
 		</div>
 		<div class="clear"></div>

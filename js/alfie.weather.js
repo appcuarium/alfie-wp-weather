@@ -12,7 +12,7 @@ Copyright © 2012 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0
+@version 1.0.5
 									
 ====================================
 
@@ -140,7 +140,7 @@ if ( typeof Object.create !== 'function' ) {
 			
 			$.when( me.fetch('/wp-content/plugins/alfie-wp-weather/getfeed.php', 'json', params.params )).then(function( response ) {
 				$.when(me.build_weather_widget(response)).done(function(res){
-					$('#dummy').append( res );
+					//$('#dummy').append( res );
 				});
 			});
 		},
@@ -153,6 +153,7 @@ if ( typeof Object.create !== 'function' ) {
 		},
 		
 		build_weather_widget: function( results ) {
+		
 			   	var me = this,
             	dfd = $.Deferred(),
             	widgetTemplate = $.trim( $('#widget-template' ).html() ),
@@ -161,7 +162,7 @@ if ( typeof Object.create !== 'function' ) {
                 });
                 
             var obj = $.map( results, function ( result, i ) {
-
+	            console.log(result);
 	            // Day or night?
 				wpd = result.item.pubDate;
 				n = wpd.indexOf(":");
@@ -211,7 +212,7 @@ if ( typeof Object.create !== 'function' ) {
                 	.replace(/{{forecast_two_code}}/ig, result.item.forecast.tomorrow.code)
                 	.replace(/{{yahoo_logo}}/ig, result.image.url);
 				
-               	var results = $( '.alfie-container' ).html( widgetHTML )[0];
+               	var results = $( '#woeid-' + result.woeid ).html( widgetHTML )[0];
                		dfd.resolve( results ); 
                 
             });
@@ -280,4 +281,4 @@ if ( typeof Object.create !== 'function' ) {
 
     $.fn.alfie.options = {};
 		
-})(jQuery, window, document);
+})( jQuery, window, document );

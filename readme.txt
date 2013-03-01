@@ -4,7 +4,7 @@ Donate link:
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,12 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.5 =
+
+* Now you cand add multiple widgets on the same page.
+* Corrected a bug wich triggered an error when WPML wasn't installed.
+* Made credits footer optional, you can now disable it if you want from widget options.
 
 = 1.0.4 =
 
