@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.5
+@version 1.0.6
 									
 ====================================
 
@@ -46,7 +46,7 @@ switch ( $locale ) {
 // Load the WPML global object
 global $sitepress;
 
-//Change language to call language fi WMPL is active
+//Change language to call language if WMPL is active
 if ( $sitepress ) {
 
 	$sitepress->switch_lang( $locale, true );

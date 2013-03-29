@@ -12,7 +12,7 @@ Copyright © 2012 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.5
+@version 1.0.6
 									
 ====================================
 
@@ -162,7 +162,6 @@ if ( typeof Object.create !== 'function' ) {
                 });
                 
             var obj = $.map( results, function ( result, i ) {
-	            console.log(result);
 	            // Day or night?
 				wpd = result.item.pubDate;
 				n = wpd.indexOf(":");
