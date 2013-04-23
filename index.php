@@ -4,7 +4,7 @@
 Plugin Name: Alfie WP Weather
 Plugin URI: http://www.appcuarium.com
 Description: Add weather forecasts to your WP website.
-Version: 1.0.7
+Version: 1.0.8
 Author: Appcuarium
 Author URI: http://www.appcuarium.com
 Text Domain: alfie_wp_weather
@@ -56,6 +56,9 @@ function alfie_wp_weather_widget() {
 	register_widget( 'alfie_wp_weather_widget' );
 
 }
+
+// Register the shortcode
+include ( 'shortcode.php' );
 
 // Done.
 

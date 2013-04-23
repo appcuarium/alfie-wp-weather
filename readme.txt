@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,7 @@ If you like the plugin and want to donate, please donate to Save The Children at
 1. Upload the alfie-wp-weather folder to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. There's no configuration needed. You can add the Alfie WP Weather widget in a sidebar like usually.
+4. To display the weather info anywhere on your WordPress site use the shortcode [alfie_wp_weather] 
 
 == Frequently asked questions ==
 
@@ -35,6 +36,12 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.8 =
+
+* Added shortcode. Now the weather info can be displayed anywhere.
+* Fixed an issue with the plugin not loading if WordPress was installed in a directory other than root
+
 = 1.0.7 =
 
 * Fixed minor bugs.

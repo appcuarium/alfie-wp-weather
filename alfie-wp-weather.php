@@ -1,7 +1,7 @@
 <?php
 /**
 
-	Alfie WP Weather Widget 1.0.7
+	Alfie WP Weather Widget 1.0.8
 
 */
 
@@ -63,11 +63,11 @@ function alfie_wp_weather( $options ) {
 				</div>
 				<?php } ?>
 			</div>
-		</script>
+</script>
 <script>
 ( function ( $, window, document, undefined ) {
 	$( function () {
-		var $me = $( 'body' );
+		var $me = $( '#woeid-<?php echo $options['woeid']; ?>' );
 		$me.alfie({
 			action: {
 				get_weather: {
@@ -108,6 +108,7 @@ class alfie_wp_weather_widget extends WP_Widget {
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
 			wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );	
+			wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( get_site_url(), '', plugins_url())));
 			
 		}
 	}
