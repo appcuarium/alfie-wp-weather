@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,27 @@ If you like the plugin and want to donate, please donate to Save The Children at
 1. Upload the alfie-wp-weather folder to the /wp-content/plugins/ directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. There's no configuration needed. You can add the Alfie WP Weather widget in a sidebar like usually.
-4. To display the weather info anywhere on your WordPress site use the shortcode [alfie_wp_weather] 
+4. To display the weather info anywhere on your WordPress site use the shortcode [alfie_wp_weather]. By default, the shortcode will activate the full weather info, will show the temperature in Celsius degrees. If you want to disable some of the info displayed, you can pass 0 as parameter for the desired option.
+
+For example, in order to display the weather info for New York in Fahrenheit degrees, disabling country and condition info, the shortcode will look like this:
+
+[alfie_wp_weather woeid="2459115" country=0 condition=0 units="f"]
+
+Available parameters are: 
+
+	[woeid] -> text
+	[image] -> boolean
+	[country] -> boolean
+	[condition] -> boolean
+	[units] -> text
+	[highlow] -> boolean
+	[wind] -> boolean
+	[humidity] -> boolean
+	[visibility] -> boolean
+	[sunrise] -> boolean
+	[sunset] -> boolean
+	[forecast] -> boolean
+	[credits] -> boolean
 
 == Frequently asked questions ==
 
@@ -36,6 +56,11 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.9 =
+
+* Changed the shorcode parameters name to shorter ones
+* Added shortcode usege instructions
 
 = 1.0.8 =
 
