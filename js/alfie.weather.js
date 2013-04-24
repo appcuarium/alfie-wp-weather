@@ -228,7 +228,7 @@ if ( typeof Object.create !== 'function' ) {
             return $.ajax({
                 
                 url: ajaxUrl,
-                async: true,
+                async: false,
                 cache: false,
                 data: ajaxParams,
                 dataType: ajaxEncoding

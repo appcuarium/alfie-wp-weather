@@ -1,7 +1,7 @@
 <?php
 /**
 
-	Alfie WP Weather Widget 1.0.9
+	Alfie WP Weather Widget 1.0.10
 
 */
 

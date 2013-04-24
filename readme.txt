@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,6 +56,10 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.10 =
+
+* Corrected an error that prevented the changes made in version 1.0.9 to be uploaded to WordPress servers
 
 = 1.0.9 =
 
