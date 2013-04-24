@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ No questions for now...
 
 == Changelog ==
 
+= 1.0.11 =
+
+* Changed the way internal referencing of files is made. Now the plugin is fully compatible with subdirectory WordPress installs.
+
 = 1.0.10 =
 
 * Corrected an error that prevented the changes made in version 1.0.9 to be uploaded to WordPress servers
@@ -64,7 +68,7 @@ No questions for now...
 = 1.0.9 =
 
 * Changed the shorcode parameters name to shorter ones
-* Added shortcode usege instructions
+* Added shortcode usage instructions
 
 = 1.0.8 =
 

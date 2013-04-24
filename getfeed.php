@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.10
+@version 1.0.11
 									
 ====================================
 
@@ -23,7 +23,7 @@ Alfie Weather JSON helper
 header('Content-type: application/json');
 
 // Load WP classes so we can translate the strings usin WordPress native double underscore function
-require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php' );
+require_once('../../../wp-load.php' );
 
 // Get the locale value from the AJAX call
 $locale = $_GET['locale'];

@@ -1,7 +1,7 @@
 <?php
 /**
 
-	Alfie WP Weather Widget 1.0.10
+	Alfie WP Weather Widget 1.0.11
 
 */
 
@@ -102,14 +102,22 @@ class alfie_wp_weather_widget extends WP_Widget {
 		
 		$this->WP_Widget( 'alfie-wp-weather', 'Alfie WP Weather', $widget_options );
 		
+		$protocol = 'http';
+		
+		if ( isset( $_SERVER['HTTPS'] ) ) {
+			if ( strtoupper( $_SERVER['HTTPS'] ) == 'ON' ) {
+				$protocol = 'https';
+			}
+		}
+			
 		if ( is_active_widget( false, false, $this->id_base ) ) {
 			
 			wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );	
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
 			wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );	
-			wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( get_site_url(), '', plugins_url())));
-			
+			wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol.'://'.$_SERVER['HTTP_HOST'], '', plugins_url())));
+
 		}
 	}
 	

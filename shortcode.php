@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.10
+@version 1.0.11
 									
 ====================================
 
@@ -22,6 +22,7 @@ Alfie Weather shortcode
 */
 
 class Alfie_WP_Shortcode {
+	
 	static $add_shortcode_scripts;
 
 	static function init() {
@@ -73,12 +74,20 @@ class Alfie_WP_Shortcode {
 		}
 
 		static function register_script() {
+					
+			$protocol = 'http';
+		
+			if ( isset( $_SERVER['HTTPS'] ) ) {
+				if ( strtoupper( $_SERVER['HTTPS'] ) == 'ON' ) {
+					$protocol = 'https';
+				}
+			}
 			
 			wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );	
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
 			wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );	
-			wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( get_site_url(), '', plugins_url())));
+			wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol.'://'.$_SERVER['HTTP_HOST'], '', plugins_url())));
 		
 	}
 
