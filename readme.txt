@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,7 @@ Alfie WP Weather is a powerful, flexible plugin that adds weather information to
 
 Alfie WP Weather is a smart plugin that adds weather information to your WordPress website. It comes with an integrated Ajax location search, so you can setup everything with just a few clicks. Every aspect of the plugin is configurable. You can choose to display minimum, custom or full weather information available, including the forecast. The plugin uses the Yahoo! API for the real-time location and weather information. The information is cached for an hour to avoid over-usage of the Yahoo! API and also to provide the fastest response times from the server.
 
+Alfie WP Weather has received the compatibility certification from WPML.
 The plugin and widget are already translated into Spanish and Romanian. More translations and cool features coming soon.
 
 If you like the plugin and want to donate, please donate to Save The Children at https://secure.savethechildren.org/site/donor.asp
@@ -56,6 +57,14 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.12 =
+
+* Fixed an issue with main condition image displaying on the widget even if the checkbox was unchecked in admin
+* Added option to deactivate the widget forecast images
+* General code optimization
+* Fully compatible with WordPress 3.7.1
+* Now the data is retrieved asynchronously, non-blocking page load
 
 = 1.0.11 =
 
