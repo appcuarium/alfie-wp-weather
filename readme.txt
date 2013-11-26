@@ -3,7 +3,7 @@ Contributors: appcuarium
 Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
-Tested up to: 3.5
+Tested up to: 3.7.1
 Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
