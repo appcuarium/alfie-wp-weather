@@ -2,7 +2,7 @@
 /*
 
 ============ appcuarium ============
-									
+
 Alfie ® Platform SDK
 
 ====== Apps outside the box.® ======
@@ -13,21 +13,19 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.13
-									
+@version 1.0.14
+
 ====================================
 
 Alfie Weather shortcode
 
 */
 
-class Alfie_WP_Shortcode
-{
+class Alfie_WP_Shortcode {
 
     static $add_shortcode_scripts;
 
-    static function init()
-    {
+    static function init() {
 
         add_shortcode( 'alfie_wp_weather', array( __CLASS__, 'alfie_wp_weather_shortcode' ) );
         add_action( 'init', array( __CLASS__, 'register_script' ) );
@@ -35,27 +33,27 @@ class Alfie_WP_Shortcode
 
     }
 
-    static function alfie_wp_weather_shortcode( $attributes )
-    {
+    static function alfie_wp_weather_shortcode( $attributes ) {
 
         self::$add_shortcode_scripts = true;
 
-        extract( shortcode_atts( array(
-            'woeid' => '866528',
-            'image' => true,
-            'country' => true,
-            'condition' => true,
-            'units' => 'c',
-            'highlow' => true,
-            'wind' => true,
-            'humidity' => true,
-            'visibility' => true,
-            'sunrise' => true,
-            'sunset' => true,
-            'forecast' => true,
-            'forecast_image' => true,
-            'credits' => true
-        ), $attributes ) );
+        extract( shortcode_atts(
+            array(
+                 'woeid' => '866528',
+                 'image' => true,
+                 'country' => true,
+                 'condition' => true,
+                 'units' => 'c',
+                 'highlow' => true,
+                 'wind' => true,
+                 'humidity' => true,
+                 'visibility' => true,
+                 'sunrise' => true,
+                 'sunset' => true,
+                 'forecast' => true,
+                 'forecast_image' => true,
+                 'credits' => true
+            ), $attributes ) );
 
         $attributes = array(
             'woeid' => $woeid,
@@ -77,8 +75,7 @@ class Alfie_WP_Shortcode
         return '<div id="woeid-' . $attributes['woeid'] . '" class="widget-container alfie-container">' . alfie_wp_weather( $attributes ) . '</div>';
     }
 
-    static function register_script()
-    {
+    static function register_script() {
 
         $protocol = 'http';
 
@@ -90,20 +87,20 @@ class Alfie_WP_Shortcode
 
         wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );
         wp_enqueue_script( 'jquery' );
-        wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
-        wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
+        wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
         wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER['HTTP_HOST'], '', plugins_url() ) ) );
+        wp_enqueue_script( 'alfie-wp-admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
+        wp_localize_script( 'alfie-wp-admin', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER['HTTP_HOST'], '', plugins_url() ) ) );
 
     }
 
-    static function print_script()
-    {
+    static function print_script() {
         if ( !self::$add_shortcode_scripts ) {
             return;
         }
         wp_print_scripts( 'jquery' );
-        wp_print_scripts( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
-        wp_print_scripts( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
+        wp_print_scripts( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
+        wp_print_scripts( 'alfie-wp-admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
     }
 }
 

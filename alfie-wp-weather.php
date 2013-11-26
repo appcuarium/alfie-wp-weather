@@ -1,13 +1,12 @@
 <?php
 /**
  *
- * Alfie WP Weather Widget 1.0.13
+ * Alfie WP Weather Widget 1.0.14
 
  */
 
-function alfie_wp_weather( $options )
-{
-// Show the widget items as selected in the admin
+function alfie_wp_weather( $options ) {
+    // Show the widget items as selected in the admin
     ?>
     <div id="dummy"></div>
     <script id="widget-template" type="alfie/appcuarium">
@@ -25,8 +24,7 @@ function alfie_wp_weather( $options )
                     <div class="alfie-wp-weather-item alfie-description">{{condition}}</div>
                 <?php } ?>
         <?php if ( $options['alfie_wp_weather_highlow'] ) { ?>
-                    <div class="alfie-wp-weather-item alfie-range"><?php echo __( 'High', 'alfie_wp_weather' ); ?>:&nbsp;{{high}}&deg;&nbsp;<?php echo __( 'Low', 'alfie_wp_weather' ); ?>
-                        :&nbsp;{{low}}&deg;</div>
+                    <div class="alfie-wp-weather-item alfie-range"><?php echo __( 'High', 'alfie_wp_weather' ); ?>:&nbsp;{{high}}&deg;&nbsp;<?php echo __( 'Low', 'alfie_wp_weather' ); ?>:&nbsp;{{low}}&deg;</div>
                 <?php } ?>
         <?php if ( $options['alfie_wp_weather_wind'] ) { ?>
                     <div class="alfie-wp-weather-item alfie-wind"><?php echo __( 'Wind', 'alfie_wp_weather' ); ?>:&nbsp;{{wind_direction}}
@@ -72,13 +70,15 @@ function alfie_wp_weather( $options )
         <?php if ( $options['alfie_wp_weather_credits'] ) { ?>
                 <div class="alfie-wp-weather-footer">
                     <ul>
-                        <li class="left"><img title="{{yahoo_logo_title}}" src="{{yahoo_logo}}" width="80"></li>
-                        <li class="right">powered by <a href="http://www.appcuarium.com"
+                        <li class="alfie-left"><img title="{{yahoo_logo_title}}" src="{{yahoo_logo}}" width="80"></li>
+                        <li class="alfie-right">powered by <a href="http://www.appcuarium.com"
                                                         target="_blank"><strong>appcuarium</strong></a></li>
                     </ul>
                 </div>
             <?php } ?>
         </div>
+
+
 
     </script>
     <script>
@@ -112,11 +112,9 @@ function alfie_wp_weather( $options )
 <?php
 }
 
-class alfie_wp_weather_widget extends WP_Widget
-{
+class alfie_wp_weather_widget extends WP_Widget {
 
-    function __construct()
-    {
+    function __construct() {
 
         $widget_options = array( 'classname' => 'alfie_wp_weather', 'description' => __( 'Alfie WP Weather widget.', 'alfie_wp_weather' ) );
 
@@ -130,19 +128,19 @@ class alfie_wp_weather_widget extends WP_Widget
             }
         }
 
-        if ( is_active_widget( false, false, $this->id_base ) ) {
+        if ( is_active_widget( false, false, $this->id_base ) && !has_shortcode($post->post_content, 'alfie_wp_weather' ) ) {
 
             wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );
             wp_enqueue_script( 'jquery' );
-            wp_enqueue_script( 'alfie-wp-weatherclass', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
-            wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
+            wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
             wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER['HTTP_HOST'], '', plugins_url() ) ) );
+            wp_enqueue_script( 'alfie-wp-admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
+            wp_localize_script( 'alfie-wp-admin', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER['HTTP_HOST'], '', plugins_url() ) ) );
 
         }
     }
 
-    function widget( $args, $instance )
-    {
+    function widget( $args, $instance ) {
         extract( $args );
 
         $args = array(
@@ -176,8 +174,7 @@ class alfie_wp_weather_widget extends WP_Widget
 
     }
 
-    function update( $new_instance, $old_instance )
-    {
+    function update( $new_instance, $old_instance ) {
 
         $instance = $old_instance;
 
@@ -199,10 +196,9 @@ class alfie_wp_weather_widget extends WP_Widget
         return $instance;
     }
 
-    function form( $instance )
-    {
+    function form( $instance ) {
         wp_enqueue_style( 'alfie_weatheroptions', ALFIE_WEATHER_URL . 'css/admin.min.css', false, 0.7, 'screen' );
-        wp_enqueue_script( 'alfie-wp-weatherclass_admin', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
+        // wp_enqueue_script( 'alfie-wp-weatherclass_admin', ALFIE_WEATHER_URL . 'js/alfie.weather.js' );
         wp_enqueue_script( 'alfie-wp-weather_admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
 
         $defaults = array(
@@ -231,8 +227,6 @@ class alfie_wp_weather_widget extends WP_Widget
 			<li rel="{{woeid}}" class="item city-woeid">
 				<a>{{location}} - {{country}}</span>
 			</li>
-
-
 
 
         </script>

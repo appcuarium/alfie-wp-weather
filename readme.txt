@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.5
-Stable tag: 1.0.13
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,9 +15,29 @@ Alfie WP Weather is a powerful, flexible plugin that adds weather information to
 Alfie WP Weather is a smart plugin that adds weather information to your WordPress website. It comes with an integrated Ajax location search, so you can setup everything with just a few clicks. Every aspect of the plugin is configurable. You can choose to display minimum, custom or full weather information available, including the forecast. The plugin uses the Yahoo! API for the real-time location and weather information. The information is cached for an hour to avoid over-usage of the Yahoo! API and also to provide the fastest response times from the server.
 
 Alfie WP Weather has received the compatibility certification from WPML.
-The plugin and widget are already translated into Spanish and Romanian. More translations and cool features coming soon.
 
-If you like the plugin and want to donate, please donate to Save The Children at https://secure.savethechildren.org/site/donor.asp
+The plugin and widget are translated into the following languages:
+
+* English
+* Spanish
+* Romanian
+* Moldavian ( Romanian )
+* Italian
+* German
+* Persian
+* Greek
+
+More translations and cool features coming soon.
+
+Each Alfie WP Weather update is tested for fully compatibility with latest WordPress releases for:
+
+* WordPress default installs
+* WordPress subfolder installs
+* WordPress MultiSite subdomain mapping
+* WordPress MultiSite subfolder mapping
+* Domanin re-mapping of WordPress MultiSite installs
+
+If you like the plugin and want to donate, please make your donation to Save The Children at https://secure.savethechildren.org/site/donor.asp
 
 == Installation ==
 
@@ -32,11 +52,11 @@ For example, in order to display the weather info for New York in Fahrenheit deg
 
 Available parameters are: 
 
-	[woeid] -> text
+	[woeid] -> string
 	[image] -> boolean
 	[country] -> boolean
 	[condition] -> boolean
-	[units] -> text
+	[units] -> string
 	[highlow] -> boolean
 	[wind] -> boolean
 	[humidity] -> boolean
@@ -44,6 +64,7 @@ Available parameters are:
 	[sunrise] -> boolean
 	[sunset] -> boolean
 	[forecast] -> boolean
+	[forecast_image] -> boolean
 	[credits] -> boolean
 
 == Frequently asked questions ==
@@ -57,6 +78,16 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.14 =
+* Fixed an issue with cPanel mod_userdir activated (domain/~username/wordpress_path/) returning an error with controller script
+* Changed some CSS selectors naming to a more personalized one, to avoid conflicts with possible common used names
+* Added Greek translation ( Nikolaos Batsis )
+* Added German translation
+* Added Italian translation
+* Added Persian translation
+* Added Moldavian translation
+* General code improvement
 
 = 1.0.13 =
 * Fixed an issue with latest commit

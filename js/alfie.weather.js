@@ -19,7 +19,6 @@
  Alfie Weather plugin
 
  */
-
 // Create wrapper for non-supporting browsers
 if (typeof Object.create !== 'function') {
 
@@ -44,6 +43,7 @@ if (typeof Object.create !== 'function') {
             me.query = '';
             me.searchInput = $('#widgets-right #search-location');
             me.template = $.trim($('#weather-template').html());
+            me.plugins_path = alfie.path;
             me.route();
 
         },
@@ -138,8 +138,7 @@ if (typeof Object.create !== 'function') {
 
         get_weather: function (params) {
             var me = Alfie;
-
-            $.when(me.fetch('/wp-content/plugins/alfie-wp-weather/getfeed.php', 'json', params.params)).then(function (response) {
+            $.when(me.fetch( alfie.path + '/alfie-wp-weather/getfeed.php', 'json', params.params)).then(function (response) {
                 $.when(me.build_weather_widget(response)).done(function (res) {
                     //$('#dummy').append( res );
                 });

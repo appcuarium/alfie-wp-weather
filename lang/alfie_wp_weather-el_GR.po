@@ -1,0 +1,411 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Alfie WP Weather plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-26 22:50+0100\n"
+"PO-Revision-Date: 2013-11-26 22:50+0100\n"
+"Last-Translator: \n"
+"Language-Team: Appcuarium - The Alfie Team <alfie@appcuarium.com>\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:27 alfie-wp-weather.php:54 alfie-wp-weather.php:64
+msgid "High"
+msgstr "Μέγιστη"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:27 alfie-wp-weather.php:56 alfie-wp-weather.php:66
+msgid "Low"
+msgstr "Ελάχιστη"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:30
+msgid "Wind"
+msgstr "Αέρας"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:35
+msgid "Humidity"
+msgstr "Υγρασία"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:38
+msgid "Visibility"
+msgstr "Ορατότητα"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:41
+msgid "Sunrise"
+msgstr "Ανατολή Ηλίου"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:44
+msgid "Sunset"
+msgstr "Δύση Ηλίου"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:119
+msgid "Alfie WP Weather widget."
+msgstr "Alfie WP Weather widget."
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:205
+msgid "Local Weather"
+msgstr "Τοπικός Καιρός"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:224
+msgid "Celsius"
+msgstr "Κελσίου"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:224
+msgid "Fahreinheit"
+msgstr "Fahreinheit"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:236
+msgid "Title:"
+msgstr "Τίτλος:"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:244
+msgid "WOEID:"
+msgstr "WOEID:"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:253
+msgid "Search for a location:"
+msgstr "Αναζήτηση τοποθεσίας:"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:257
+msgid "Click to search location"
+msgstr "Κάντε κλικ για αναζήτηση Τοπεθεσίας"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:268
+msgid "Temperature"
+msgstr "Θερμοκρασία"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:282
+msgid "Show image?"
+msgstr "Εικόνα;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:291
+msgid "Show country?"
+msgstr "Χώρα;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:300
+msgid "Show condition?"
+msgstr "Κατάσταση;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:309
+msgid "Show High/Low info?"
+msgstr "Μέγιστη/Ελάχιστη;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:318
+msgid "Show wind info?"
+msgstr "Αέρας;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:327
+msgid "Show humidity info?"
+msgstr "Υγρασία;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:336
+msgid "Show visibility info?"
+msgstr "Ορατότητα;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:345
+msgid "Show sunrise info?"
+msgstr "Ανατολή του ηλίου;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:354
+msgid "Show sunset info?"
+msgstr "Δύση Ήλιου;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:363
+msgid "Show forecast?"
+msgstr "Πρόβλεψη;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:372
+#, fuzzy
+msgid "Show forecast images?"
+msgstr "Πρόβλεψη;"
+
+# @ alfie_wp_weather
+#: alfie-wp-weather.php:381
+msgid "Show credits footer?"
+msgstr "Show credits footer?"
+
+# @ alfie_wp_weather
+#: getfeed.php:102
+msgid "Sunday"
+msgstr "Κυριακή"
+
+# @ alfie_wp_weather
+#: getfeed.php:106
+msgid "Monday"
+msgstr "Δευτέρα"
+
+# @ alfie_wp_weather
+#: getfeed.php:110
+msgid "Tuesday"
+msgstr "Τρίτη"
+
+# @ alfie_wp_weather
+#: getfeed.php:114
+msgid "Wednesday"
+msgstr "Τετάρτη"
+
+# @ alfie_wp_weather
+#: getfeed.php:118
+msgid "Thursday"
+msgstr "Πέμπτη"
+
+# @ alfie_wp_weather
+#: getfeed.php:122
+msgid "Friday"
+msgstr "Παρασκευή"
+
+# @ alfie_wp_weather
+#: getfeed.php:126
+msgid "Saturday"
+msgstr "Σάββατο"
+
+# @ alfie_wp_weather
+#: getfeed.php:142
+msgid "Tornado"
+msgstr "Ανεμοστρόβιλος"
+
+# @ alfie_wp_weather
+#: getfeed.php:146
+msgid "Tropical Storm"
+msgstr "Τροπική θύελλα"
+
+# @ alfie_wp_weather
+#: getfeed.php:150
+msgid "Hurricane"
+msgstr "Τυφώνας"
+
+# @ alfie_wp_weather
+#: getfeed.php:154
+msgid "Severe Thunderstorms"
+msgstr "Έντονες καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:158
+msgid "Thunderstorms"
+msgstr "Καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:162
+msgid "Mixed Rain and Snow"
+msgstr "Βροχή και χιόνι"
+
+# @ alfie_wp_weather
+#: getfeed.php:166
+msgid "Mixed Rain and Sleet"
+msgstr "Βροχή και χιονόνερο"
+
+# @ alfie_wp_weather
+#: getfeed.php:170
+msgid "Mixed Snow and Sleet"
+msgstr "Χιόνι και χιονόνερο"
+
+# @ alfie_wp_weather
+#: getfeed.php:174
+msgid "Freezing Drizzle"
+msgstr "Παγωμένο ψιλόβροχο"
+
+# @ alfie_wp_weather
+#: getfeed.php:178
+msgid "Drizzle"
+msgstr "Ψιλόβροχο"
+
+# @ alfie_wp_weather
+#: getfeed.php:182
+msgid "Freezing Rain"
+msgstr "Παγωμένη βροχή"
+
+# @ alfie_wp_weather
+#: getfeed.php:186 getfeed.php:190
+msgid "Showers"
+msgstr "Καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:194
+msgid "Snow Flurries"
+msgstr "Ψιλόχιονο"
+
+# @ alfie_wp_weather
+#: getfeed.php:198
+msgid "Light Snow Showers"
+msgstr "Αραιό ψιλόχιονο"
+
+# @ alfie_wp_weather
+#: getfeed.php:202
+msgid "Blowing Snow"
+msgstr "Χιονοθύελλα "
+
+# @ alfie_wp_weather
+#: getfeed.php:206
+msgid "Snow"
+msgstr "Χιόνι"
+
+# @ alfie_wp_weather
+#: getfeed.php:210
+msgid "Hail"
+msgstr "Χαλάζι"
+
+# @ alfie_wp_weather
+#: getfeed.php:214
+msgid "Sleet"
+msgstr "Χιονόνερο"
+
+# @ alfie_wp_weather
+#: getfeed.php:218
+msgid "Dust"
+msgstr "Σκόνη"
+
+# @ alfie_wp_weather
+#: getfeed.php:222
+msgid "Foggy"
+msgstr "Ομιχλώδης"
+
+# @ alfie_wp_weather
+#: getfeed.php:226
+msgid "Haze"
+msgstr "Ομίχλη"
+
+# @ alfie_wp_weather
+#: getfeed.php:230
+msgid "Smoky"
+msgstr "Καπνώδης"
+
+# @ alfie_wp_weather
+#: getfeed.php:234
+msgid "Blustery"
+msgstr "Βροντές"
+
+# @ alfie_wp_weather
+#: getfeed.php:238
+msgid "Windy"
+msgstr "Ανεμώδης"
+
+# @ alfie_wp_weather
+#: getfeed.php:242
+msgid "Cold"
+msgstr "Κρύο"
+
+# @ alfie_wp_weather
+#: getfeed.php:246
+msgid "Cloudy"
+msgstr "Συννεφιασμένος"
+
+# @ alfie_wp_weather
+#: getfeed.php:250 getfeed.php:254
+msgid "Mostly Cloudy"
+msgstr "Νεφελώδης"
+
+# @ alfie_wp_weather
+#: getfeed.php:258 getfeed.php:262 getfeed.php:318
+msgid "Partly Cloudy"
+msgstr "Αίθριος"
+
+# @ alfie_wp_weather
+#: getfeed.php:266
+msgid "Clear"
+msgstr "Καθαρός"
+
+# @ alfie_wp_weather
+#: getfeed.php:270
+msgid "Sunny"
+msgstr "Ηλιόλουστος"
+
+# @ alfie_wp_weather
+#: getfeed.php:274 getfeed.php:278
+msgid "Fair"
+msgstr "Καλός"
+
+# @ alfie_wp_weather
+#: getfeed.php:282
+msgid "Mixed Rain and Hail"
+msgstr "Βροχή με χαλάζι"
+
+# @ alfie_wp_weather
+#: getfeed.php:286
+msgid "Hot"
+msgstr "Ζέστη"
+
+# @ alfie_wp_weather
+#: getfeed.php:290
+msgid "Isolated Thunderstorms"
+msgstr "Μεμονωμένες καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:294 getfeed.php:298
+msgid "Scattered Thunderstorms"
+msgstr "Διάσπαρτες καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:302
+msgid "Scattered Showers"
+msgstr "Αραιές καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:306 getfeed.php:314
+msgid "Heavy Snow"
+msgstr "Έντονη Χιονόπτωση"
+
+# @ alfie_wp_weather
+#: getfeed.php:310
+msgid "Scattered Snow Showers"
+msgstr "Διάσπαρτες χιονοπτώσεις"
+
+# @ alfie_wp_weather
+#: getfeed.php:322
+msgid "Thundershowers"
+msgstr "Καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:326
+msgid "Snow Showers"
+msgstr "Χιονοπτώσεις"
+
+# @ alfie_wp_weather
+#: getfeed.php:330
+msgid "Isolated Thundershowers"
+msgstr "Μεμονωμένες καταιγίδες"
+
+# @ alfie_wp_weather
+#: getfeed.php:334
+msgid "Not Available"
+msgstr "Μη Διαθέσιμο"
+
+# @ alfie_wp_weather
+#: index.php:33
+msgid "Add weather forecasts to your WP website."
+msgstr "Add weather forecasts to your WP website."

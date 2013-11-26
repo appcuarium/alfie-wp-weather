@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.13
+@version 1.0.14
 									
 ====================================
 
@@ -32,13 +32,26 @@ switch ( $locale ) {
     case 'en_US':
         $locale = 'en';
         break;
-
     case 'es_ES':
         $locale = 'es';
         break;
-
+    case 'el_GR':
+        $locale = 'el';
+        break;
     case 'ro_RO':
         $locale = 'ro';
+        break;
+    case 'de_DE':
+        $locale = 'de';
+        break;
+    case 'it_IT':
+        $locale = 'it';
+        break;
+    case 'fa_IR':
+        $locale = 'fa';
+        break;
+    case 'ro_MO':
+        $locale = 'mo';
         break;
 
 

@@ -4,7 +4,7 @@
 Plugin Name: Alfie WP Weather
 Plugin URI: http://www.appcuarium.com
 Description: Add weather forecasts to your WP website.
-Version: 1.0.13
+Version: 1.0.14
 Author: Appcuarium
 Author URI: http://www.appcuarium.com
 Text Domain: alfie_wp_weather
@@ -40,7 +40,7 @@ function load_alfie_wp_weather()
     // Make plugin translatable
     $domain = 'alfie_wp_weather';
     $locale = apply_filters( 'plugin_locale', get_locale(), $domain );
-    load_textdomain( 'alfie_wp_weather', dirname( plugin_basename( __FILE__ ) ) . '/lang/' . $domain . '-' . get_locale() . '.mo' );
+    load_textdomain( 'alfie_wp_weather', dirname( plugin_basename( __FILE__ ) ) . '/lang/' . $domain . '-' . $locale . '.mo' );
     load_plugin_textdomain( 'alfie_wp_weather', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 
     // Load the plugin widget
