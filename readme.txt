@@ -3,8 +3,8 @@ Contributors: appcuarium
 Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
-Tested up to: 3.7.1
-Stable tag: 1.0.14
+Tested up to: 3.8
+Stable tag: 1.0.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,7 +69,9 @@ Available parameters are:
 
 == Frequently asked questions ==
 
-No questions for now...
+* Why do i see only the widget title but no content?
+
+You should enable allow_url_fopen in your server configuration, as it is needed by Alfie WP Weather to get the info from Yahoo.
 
 == Screenshots ==
 
@@ -78,6 +80,12 @@ No questions for now...
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.0.15 =
+
+* Compatibility update for WordPress 3.8
+* Fixed CSS selectors in minified version
+* Added compatibility with earlier versions of WordPress
 
 = 1.0.14 =
 * Fixed an issue with cPanel mod_userdir activated (domain/~username/wordpress_path/) returning an error with controller script

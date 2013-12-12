@@ -13,7 +13,7 @@ Copyright © 2012-2013 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.14
+@version 1.0.15
 									
 ====================================
 
@@ -94,8 +94,7 @@ $decoded = json_decode( $json );
 $object = $decoded->query->results->channel;
 
 // Function that translates the names of the week days returned by Yahoo!
-function translate_day( $dayname )
-{
+function translate_day( $dayname ) {
 
     switch ( $dayname ) {
 
@@ -133,8 +132,7 @@ function translate_day( $dayname )
 }
 
 // Function to translate the returned condition names
-function translate_condition( $condition )
-{
+function translate_condition( $condition ) {
 
     // Condition codes are integers
     switch ( $condition ) {
@@ -342,83 +340,85 @@ function translate_condition( $condition )
 }
 
 // Rebuild the array, including now the localized values
-$result = array( 'data' => array(
-    'woeid' => $woeid,
-    'title' => $object->title,
-    'link' => $object->link,
-    'description' => $object->description,
-    'language' => $object->language,
-    'lastBuildDate' => $object->lastBuildDate,
-    'ttl' => $object->ttl,
-    'location' => array(
-        'city' => $object->location->city,
-        'country' => $object->location->country
-    ),
-    'units' => array(
-        'distance' => $object->units->distance,
-        'pressure' => $object->units->pressure,
-        'speed' => $object->units->speed,
-        'temperature' => $object->units->temperature
-    ),
-    'wind' => array(
-        'chill' => $object->wind->chill,
-        'direction' => $object->wind->direction,
-        'speed' => $object->wind->speed
-    ),
-    'atmosphere' => array(
-        'humidity' => $object->atmosphere->humidity,
-        'pressure' => $object->atmosphere->pressure,
-        'rising' => $object->atmosphere->rising,
-        'visibility' => $object->atmosphere->visibility
-    ),
-    'astronomy' => array(
-        'sunrise' => $object->astronomy->sunrise,
-        'sunset' => $object->astronomy->sunset
-    ),
-    'image' => array(
-        'title' => $object->image->title,
-        'width' => $object->image->width,
-        'height' => $object->image->height,
-        'link' => $object->image->link,
-        'url' => $object->image->url
-    ),
-    'item' => array(
-        'title' => $object->item->title,
-        'lat' => $object->item->lat,
-        'long' => $object->item->long,
-        'link' => $object->item->link,
-        'pubDate' => $object->item->pubDate,
-        'condition' => array(
-            'code' => $object->item->condition->code,
-            'date' => $object->item->condition->date,
-            'temp' => $object->item->condition->temp,
-            'text' => translate_condition( $object->item->condition->code )
+$result = array(
+    'data' => array(
+        'woeid' => $woeid,
+        'title' => $object->title,
+        'link' => $object->link,
+        'description' => $object->description,
+        'language' => $object->language,
+        'lastBuildDate' => $object->lastBuildDate,
+        'ttl' => $object->ttl,
+        'location' => array(
+            'city' => $object->location->city,
+            'country' => $object->location->country
         ),
-        'description' => $object->item->description,
-        'forecast' => array(
-            'today' => array(
-                'code' => $object->item->forecast[0]->code,
-                'date' => $object->item->forecast[0]->date,
-                'day' => translate_day( $object->item->forecast[0]->day ),
-                'high' => $object->item->forecast[0]->high,
-                'low' => $object->item->forecast[0]->low,
-                'text' => translate_condition( $object->item->forecast[0]->code )
-            ),
-            'tomorrow' => array(
-                'code' => $object->item->forecast[1]->code,
-                'date' => $object->item->forecast[1]->date,
-                'day' => translate_day( $object->item->forecast[1]->day ),
-                'high' => $object->item->forecast[1]->high,
-                'low' => $object->item->forecast[1]->low,
-                'text' => translate_condition( $object->item->forecast[1]->code )
-            ),
+        'units' => array(
+            'distance' => $object->units->distance,
+            'pressure' => $object->units->pressure,
+            'speed' => $object->units->speed,
+            'temperature' => $object->units->temperature
         ),
-        'guid' => array(
-            'isPermaLink' => $object->item->guid->isPermaLink,
-            'content' => $object->item->guid->content
+        'wind' => array(
+            'chill' => $object->wind->chill,
+            'direction' => $object->wind->direction,
+            'speed' => $object->wind->speed
+        ),
+        'atmosphere' => array(
+            'humidity' => $object->atmosphere->humidity,
+            'pressure' => $object->atmosphere->pressure,
+            'rising' => $object->atmosphere->rising,
+            'visibility' => $object->atmosphere->visibility
+        ),
+        'astronomy' => array(
+            'sunrise' => $object->astronomy->sunrise,
+            'sunset' => $object->astronomy->sunset
+        ),
+        'image' => array(
+            'title' => $object->image->title,
+            'width' => $object->image->width,
+            'height' => $object->image->height,
+            'link' => $object->image->link,
+            'url' => $object->image->url
+        ),
+        'item' => array(
+            'title' => $object->item->title,
+            'lat' => $object->item->lat,
+            'long' => $object->item->long,
+            'link' => $object->item->link,
+            'pubDate' => $object->item->pubDate,
+            'condition' => array(
+                'code' => $object->item->condition->code,
+                'date' => $object->item->condition->date,
+                'temp' => $object->item->condition->temp,
+                'text' => translate_condition( $object->item->condition->code )
+            ),
+            'description' => $object->item->description,
+            'forecast' => array(
+                'today' => array(
+                    'code' => $object->item->forecast[0]->code,
+                    'date' => $object->item->forecast[0]->date,
+                    'day' => translate_day( $object->item->forecast[0]->day ),
+                    'high' => $object->item->forecast[0]->high,
+                    'low' => $object->item->forecast[0]->low,
+                    'text' => translate_condition( $object->item->forecast[0]->code )
+                ),
+                'tomorrow' => array(
+                    'code' => $object->item->forecast[1]->code,
+                    'date' => $object->item->forecast[1]->date,
+                    'day' => translate_day( $object->item->forecast[1]->day ),
+                    'high' => $object->item->forecast[1]->high,
+                    'low' => $object->item->forecast[1]->low,
+                    'text' => translate_condition( $object->item->forecast[1]->code )
+                ),
+            ),
+            'guid' => array(
+                'isPermaLink' => $object->item->guid->isPermaLink,
+                'content' => $object->item->guid->content
+            )
         )
     )
-) );
+);
 // Encode the array
 echo( json_encode( $result ) );
 

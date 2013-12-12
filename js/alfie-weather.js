@@ -1,49 +1,50 @@
 /*
 
-============ appcuarium ============
-									
-Alfie ® Platform JS SDK
+ ============ appcuarium ============
 
-====== Apps outside the box.® ======
+ Alfie ® Platform JS SDK
 
-------------------------------------
-Copyright © 2012-2013 Appcuarium
-------------------------------------
+ ====== Apps outside the box.® ======
 
-apps@appcuarium.com
-@author Sorin Gheata
-@version 1.0.14
-									
-====================================
+ ------------------------------------
+ Copyright © 2012-2013 Appcuarium
+ ------------------------------------
 
-Alfie Weather Javascript Loader
+ apps@appcuarium.com
+ @author Sorin Gheata
+ @version 1.0.15
 
-*/
+ ====================================
 
-( function ( $, window, document, undefined ) {
-	
-	$('body').on('click','.city-woeid', function(e) {
-		var woeid = $(this).attr('rel');
-		$('#widgets-right .alfie-woeid').val( woeid );
-		$('#widgets-right #cities').empty();
-		$('#widgets-right #location-input').hide();
-		$('#widgets-right #search_woeid').show();
-		$('#widgets-right #search-location').val('');
-		e.preventDefault();
-	});
-	
-	$('body').on('click','#search_woeid', function(e) {
+ Alfie Weather Javascript Loader
 
-		var me = $(this);
-			me.hide();
-			$('#widgets-right #location-input').show();
-			me.alfie({ 
-				action: {
-					searchDelayed: function( response ) {}
-				}
-			});
+ */
 
-		e.preventDefault();
-	});
-		
+(function ($, window, document, undefined) {
+
+    var $body = $('body');
+
+    $body.on('click', '.city-woeid',function (e) {
+        var woeid = $(this).attr('rel');
+        $('#widgets-right .alfie-woeid').val(woeid);
+        $('#widgets-right #cities').empty();
+        $('#widgets-right #location-input').hide();
+        $('#widgets-right #search_woeid').show();
+        $('#widgets-right #search-location').val('');
+        e.preventDefault();
+    }).on('click', '#search_woeid', function (e) {
+
+            var $me = $(this);
+            $me.hide();
+            $('#widgets-right #location-input').show();
+            $me.alfie({
+                action: {
+                    searchDelayed: function (response) {
+                    }
+                }
+            });
+
+            e.preventDefault();
+        });
+
 })(jQuery, window, document);

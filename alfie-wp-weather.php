@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Alfie WP Weather Widget 1.0.14
+ * Alfie WP Weather Widget 1.0.15
 
  */
 
@@ -80,6 +80,7 @@ function alfie_wp_weather( $options ) {
 
 
 
+
     </script>
     <script>
         (function ($, window, document, undefined) {
@@ -127,8 +128,19 @@ class alfie_wp_weather_widget extends WP_Widget {
                 $protocol = 'https';
             }
         }
+        if ( !function_exists('has_shortcode')) {
 
-        if ( is_active_widget( false, false, $this->id_base ) && !has_shortcode($post->post_content, 'alfie_wp_weather' ) ) {
+            function has_shortcode( $content, $short_code = '' ) {
+                $is_short_code = false;
+
+                if ( stripos( $content, '[' . $short_code) !== false ) {
+                    $is_short_code = true;
+                }
+
+                return $is_short_code;
+            }
+        }
+        if ( is_active_widget( false, false, $this->id_base ) && !has_shortcode( $post->post_content, 'alfie_wp_weather' ) ) {
 
             wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );
             wp_enqueue_script( 'jquery' );
@@ -229,6 +241,7 @@ class alfie_wp_weather_widget extends WP_Widget {
 			</li>
 
 
+
         </script>
         <div class="widget-controls">
             <p>
@@ -275,56 +288,50 @@ class alfie_wp_weather_widget extends WP_Widget {
                 </select>
             </p>
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_image' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_image'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_image' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_image' ); ?>"/> <?php _e( 'Show image?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_image' ); ?>"> <input class="checkbox"
+                                                                                                    type="checkbox" <?php checked( $instance['alfie_wp_weather_image'], true ); ?>
+                                                                                                    id="<?php echo $this->get_field_id( 'alfie_wp_weather_image' ); ?>"
+                                                                                                    name="<?php echo $this->get_field_name( 'alfie_wp_weather_image' ); ?>"/> <?php _e( 'Show image?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_country' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_country'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_country' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_country' ); ?>"/> <?php _e( 'Show country?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_country' ); ?>"> <input class="checkbox"
+                                                                                                      type="checkbox" <?php checked( $instance['alfie_wp_weather_country'], true ); ?>
+                                                                                                      id="<?php echo $this->get_field_id( 'alfie_wp_weather_country' ); ?>"
+                                                                                                      name="<?php echo $this->get_field_name( 'alfie_wp_weather_country' ); ?>"/> <?php _e( 'Show country?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_condition' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_condition'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_condition' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_condition' ); ?>"/> <?php _e( 'Show condition?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_condition' ); ?>"> <input class="checkbox"
+                                                                                                        type="checkbox" <?php checked( $instance['alfie_wp_weather_condition'], true ); ?>
+                                                                                                        id="<?php echo $this->get_field_id( 'alfie_wp_weather_condition' ); ?>"
+                                                                                                        name="<?php echo $this->get_field_name( 'alfie_wp_weather_condition' ); ?>"/> <?php _e( 'Show condition?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_highlow' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_highlow'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_highlow' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_highlow' ); ?>"/> <?php _e( 'Show High/Low info?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_highlow' ); ?>"> <input class="checkbox"
+                                                                                                      type="checkbox" <?php checked( $instance['alfie_wp_weather_highlow'], true ); ?>
+                                                                                                      id="<?php echo $this->get_field_id( 'alfie_wp_weather_highlow' ); ?>"
+                                                                                                      name="<?php echo $this->get_field_name( 'alfie_wp_weather_highlow' ); ?>"/> <?php _e( 'Show High/Low info?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_wind' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_wind'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_wind' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_wind' ); ?>"/> <?php _e( 'Show wind info?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_wind' ); ?>"> <input class="checkbox"
+                                                                                                   type="checkbox" <?php checked( $instance['alfie_wp_weather_wind'], true ); ?>
+                                                                                                   id="<?php echo $this->get_field_id( 'alfie_wp_weather_wind' ); ?>"
+                                                                                                   name="<?php echo $this->get_field_name( 'alfie_wp_weather_wind' ); ?>"/> <?php _e( 'Show wind info?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_humidity' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_humidity'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_humidity' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_humidity' ); ?>"/> <?php _e( 'Show humidity info?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_humidity' ); ?>"> <input class="checkbox"
+                                                                                                       type="checkbox" <?php checked( $instance['alfie_wp_weather_humidity'], true ); ?>
+                                                                                                       id="<?php echo $this->get_field_id( 'alfie_wp_weather_humidity' ); ?>"
+                                                                                                       name="<?php echo $this->get_field_name( 'alfie_wp_weather_humidity' ); ?>"/> <?php _e( 'Show humidity info?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
@@ -338,29 +345,26 @@ class alfie_wp_weather_widget extends WP_Widget {
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_sunrise' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_sunrise'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_sunrise' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_sunrise' ); ?>"/> <?php _e( 'Show sunrise info?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_sunrise' ); ?>"> <input class="checkbox"
+                                                                                                      type="checkbox" <?php checked( $instance['alfie_wp_weather_sunrise'], true ); ?>
+                                                                                                      id="<?php echo $this->get_field_id( 'alfie_wp_weather_sunrise' ); ?>"
+                                                                                                      name="<?php echo $this->get_field_name( 'alfie_wp_weather_sunrise' ); ?>"/> <?php _e( 'Show sunrise info?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_sunset' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_sunset'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_sunset' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_sunset' ); ?>"/> <?php _e( 'Show sunset info?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_sunset' ); ?>"> <input class="checkbox"
+                                                                                                     type="checkbox" <?php checked( $instance['alfie_wp_weather_sunset'], true ); ?>
+                                                                                                     id="<?php echo $this->get_field_id( 'alfie_wp_weather_sunset' ); ?>"
+                                                                                                     name="<?php echo $this->get_field_name( 'alfie_wp_weather_sunset' ); ?>"/> <?php _e( 'Show sunset info?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_forecast' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_forecast'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_forecast' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_forecast' ); ?>"/> <?php _e( 'Show forecast?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_forecast' ); ?>"> <input class="checkbox"
+                                                                                                       type="checkbox" <?php checked( $instance['alfie_wp_weather_forecast'], true ); ?>
+                                                                                                       id="<?php echo $this->get_field_id( 'alfie_wp_weather_forecast' ); ?>"
+                                                                                                       name="<?php echo $this->get_field_name( 'alfie_wp_weather_forecast' ); ?>"/> <?php _e( 'Show forecast?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
 
@@ -374,11 +378,10 @@ class alfie_wp_weather_widget extends WP_Widget {
             </p>
 
             <p>
-                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_credits' ); ?>">
-                    <input class="checkbox"
-                           type="checkbox" <?php checked( $instance['alfie_wp_weather_credits'], true ); ?>
-                           id="<?php echo $this->get_field_id( 'alfie_wp_weather_credits' ); ?>"
-                           name="<?php echo $this->get_field_name( 'alfie_wp_weather_credits' ); ?>"/> <?php _e( 'Show credits footer?', 'alfie_wp_weather' ); ?>
+                <label for="<?php echo $this->get_field_id( 'alfie_wp_weather_credits' ); ?>"> <input class="checkbox"
+                                                                                                      type="checkbox" <?php checked( $instance['alfie_wp_weather_credits'], true ); ?>
+                                                                                                      id="<?php echo $this->get_field_id( 'alfie_wp_weather_credits' ); ?>"
+                                                                                                      name="<?php echo $this->get_field_name( 'alfie_wp_weather_credits' ); ?>"/> <?php _e( 'Show credits footer?', 'alfie_wp_weather' ); ?>
                 </label>
             </p>
         </div>

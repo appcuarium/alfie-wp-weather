@@ -23,8 +23,7 @@
 if (typeof Object.create !== 'function') {
 
     Object.create = function (obj) {
-        function F() {
-        };
+        function F() {};
         F.prototype = obj;
         return new F();
     };
@@ -43,9 +42,7 @@ if (typeof Object.create !== 'function') {
             me.query = '';
             me.searchInput = $('#widgets-right #search-location');
             me.template = $.trim($('#weather-template').html());
-            me.plugins_path = alfie.path;
             me.route();
-
         },
 
         // Receive scope and action and route input based on values
@@ -138,7 +135,7 @@ if (typeof Object.create !== 'function') {
 
         get_weather: function (params) {
             var me = Alfie;
-            $.when(me.fetch( alfie.path + '/alfie-wp-weather/getfeed.php', 'json', params.params)).then(function (response) {
+            $.when(me.fetch(alfie.path + '/alfie-wp-weather/getfeed.php', 'json', params.params)).then(function (response) {
                 $.when(me.build_weather_widget(response)).done(function (res) {
                     //$('#dummy').append( res );
                 });
@@ -180,71 +177,54 @@ if (typeof Object.create !== 'function') {
                 if (wd >= 348.75 && wd <= 360) {
                     wd = "N"
                 }
-                ;
                 if (wd >= 0 && wd < 11.25) {
                     wd = "N"
                 }
-                ;
                 if (wd >= 11.25 && wd < 33.75) {
                     wd = "NNE"
                 }
-                ;
                 if (wd >= 33.75 && wd < 56.25) {
                     wd = "NE"
                 }
-                ;
                 if (wd >= 56.25 && wd < 78.75) {
                     wd = "ENE"
                 }
-                ;
                 if (wd >= 78.75 && wd < 101.25) {
                     wd = "E"
                 }
-                ;
                 if (wd >= 101.25 && wd < 123.75) {
                     wd = "ESE"
                 }
-                ;
                 if (wd >= 123.75 && wd < 146.25) {
                     wd = "SE"
                 }
-                ;
                 if (wd >= 146.25 && wd < 168.75) {
                     wd = "SSE"
                 }
-                ;
                 if (wd >= 168.75 && wd < 191.25) {
                     wd = "S"
                 }
-                ;
                 if (wd >= 191.25 && wd < 213.75) {
                     wd = "SSW"
                 }
-                ;
                 if (wd >= 213.75 && wd < 236.25) {
                     wd = "SW"
                 }
-                ;
                 if (wd >= 236.25 && wd < 258.75) {
                     wd = "WSW"
                 }
-                ;
                 if (wd >= 258.75 && wd < 281.25) {
                     wd = "W"
                 }
-                ;
                 if (wd >= 281.25 && wd < 303.75) {
                     wd = "WNW"
                 }
-                ;
                 if (wd >= 303.75 && wd < 326.25) {
                     wd = "NW"
                 }
-                ;
                 if (wd >= 326.25 && wd < 348.75) {
                     wd = "NNW"
                 }
-                ;
                 var image_bg = 'http://l.yimg.com/a/i/us/nws/weather/gr/{{condition_code}}';
 
                 if (result.item.condition.code == 20) {

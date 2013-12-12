@@ -1,2 +1,44 @@
 /* Alfie WP Weather Admin Styling */
-#location-search{position:relative;}#cities{position:absolute;background:#FFF;width:100%;box-shadow:0 9px 15px rgba(0,0,0,0.2);top:39px;}.loaded{padding:10px 20px 20px;}.loaded .item{border-bottom:1px dashed #EFEFEF;line-height:30px;cursor:pointer;margin:0;padding:0;}.loaded .item:hover{background:#fafafa;}#location-input{display:none;}.fullwidth{width:100%;}.aligncenter{text-align:center;}.mb20{margin-bottom:20px;}
+#location-search {
+    position: relative;
+}
+
+#cities {
+    position: absolute;
+    background: #FFF;
+    width: 100%;
+    box-shadow: 0 9px 15px rgba(0, 0, 0, 0.2);
+    top: 39px;
+}
+
+.loaded {
+    padding: 10px 20px 20px;
+}
+
+.loaded .item {
+    border-bottom: 1px dashed #EFEFEF;
+    line-height: 30px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.loaded .item:hover {
+    background: #fafafa;
+}
+
+#location-input {
+    display: none;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
