@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather plugin\n"
-"POT-Creation-Date: 2014-04-12 12:00+0100\n"
+"POT-Creation-Date: 2014-04-12 11:59+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Alfie Team <alfie@appcuarium.com>\n"
 "Language-Team: Appcuarium - The Alfie Team <alfie@appcuarium.com>\n"
-"Language: ro_RO\n"
+"Language: hr_HR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -22,51 +22,51 @@ msgstr ""
 
 #: alfie-wp-weather.php:27 alfie-wp-weather.php:54 alfie-wp-weather.php:64
 msgid "High"
-msgstr "Maxima"
+msgstr "Najviše"
 
 #: alfie-wp-weather.php:27 alfie-wp-weather.php:56 alfie-wp-weather.php:66
 msgid "Low"
-msgstr "Minima"
+msgstr "Najniže"
 
 #: alfie-wp-weather.php:30
 msgid "Wind"
-msgstr "Vânt"
+msgstr "Vjetar"
 
 #: alfie-wp-weather.php:35
 msgid "Humidity"
-msgstr "Umiditate"
+msgstr "Vlažnost"
 
 #: alfie-wp-weather.php:38
 msgid "Visibility"
-msgstr "VIzibilitate"
+msgstr "Vidljivost"
 
 #: alfie-wp-weather.php:41
 msgid "Sunrise"
-msgstr "Răsărit"
+msgstr "Izlazak sunca"
 
 #: alfie-wp-weather.php:44
 msgid "Sunset"
-msgstr "Apus"
+msgstr "Zalazak sunca"
 
 #: alfie-wp-weather.php:120
 msgid "Alfie WP Weather widget."
-msgstr "Widget-ul Alfie WP Weaher."
+msgstr "Alfie WP vremenska prognoza - widget"
 
 #: alfie-wp-weather.php:217
 msgid "Local Weather"
-msgstr "Vremea"
+msgstr "Vrijeme"
 
 #: alfie-wp-weather.php:236
 msgid "Celsius"
-msgstr "Celsius"
+msgstr "Celzij"
 
 #: alfie-wp-weather.php:236
 msgid "Fahrenheit"
-msgstr "Fahrenheit"
+msgstr "Farenhajt"
 
 #: alfie-wp-weather.php:249
 msgid "Title:"
-msgstr "Titlu:"
+msgstr "Naslov:"
 
 #: alfie-wp-weather.php:257
 msgid "WOEID:"
@@ -74,11 +74,11 @@ msgstr "WOEID:"
 
 #: alfie-wp-weather.php:266
 msgid "Search for a location:"
-msgstr "Caută o locație:"
+msgstr "Pretraži lokacije:"
 
 #: alfie-wp-weather.php:270
 msgid "Click to search location"
-msgstr "Click pentru a căuta o locație:"
+msgstr "Pritisni za traženje lokacije"
 
 #: alfie-wp-weather.php:281
 msgid "Temperature"
@@ -86,87 +86,87 @@ msgstr "Temperatura"
 
 #: alfie-wp-weather.php:294
 msgid "Show image?"
-msgstr "Arată imaginea?"
+msgstr "Pokaži ikonu?"
 
 #: alfie-wp-weather.php:302
 msgid "Show country?"
-msgstr "Arată țara?"
+msgstr "Prikaži državu?"
 
 #: alfie-wp-weather.php:310
 msgid "Show condition?"
-msgstr "Arată descrierea?"
+msgstr "Prikaži vremenske uvjete?"
 
 #: alfie-wp-weather.php:318
 msgid "Show High/Low info?"
-msgstr "Arată maxima/minima?"
+msgstr "Prikaži najnižu/najvišu temperaturu?"
 
 #: alfie-wp-weather.php:326
 msgid "Show wind info?"
-msgstr "Arată vânt?"
+msgstr "Prikaži informacije o vjetru?"
 
 #: alfie-wp-weather.php:334
 msgid "Show humidity info?"
-msgstr "Arată umiditate?"
+msgstr "Prikaži vlažnost zraka?"
 
 #: alfie-wp-weather.php:343
 msgid "Show visibility info?"
-msgstr "Arată vizibilitate?"
+msgstr "Prikaži vidljivost?"
 
 #: alfie-wp-weather.php:351
 msgid "Show sunrise info?"
-msgstr "Arată răsărit?"
+msgstr "Prikaži izlazak sunca?"
 
 #: alfie-wp-weather.php:359
 msgid "Show sunset info?"
-msgstr "Arată apus?"
+msgstr "Prikaži zalazak sunca?"
 
 #: alfie-wp-weather.php:367
 msgid "Show forecast?"
-msgstr "Arată prognoza?"
+msgstr "Prikaži prognozu?"
 
 #: alfie-wp-weather.php:376
 msgid "Show forecast images?"
-msgstr "Arată imagini prognoză?"
+msgstr "Prikaži prognozu?"
 
 #: alfie-wp-weather.php:384
 msgid "Show credits footer?"
-msgstr "Arată footer credite?"
+msgstr "Prikaži izlazak sunca?"
 
 #: getfeed.php:102
 msgid "Sunday"
-msgstr "Duminică"
+msgstr "Nedjelja"
 
 #: getfeed.php:106
 msgid "Monday"
-msgstr "Luni"
+msgstr "Ponedjeljak"
 
 #: getfeed.php:110
 msgid "Tuesday"
-msgstr "Marți"
+msgstr "Utorak"
 
 #: getfeed.php:114
 msgid "Wednesday"
-msgstr "Miercuri"
+msgstr "Srijeda"
 
 #: getfeed.php:118
 msgid "Thursday"
-msgstr "Joi"
+msgstr "Četvrtak"
 
 #: getfeed.php:122
 msgid "Friday"
-msgstr "Vineri"
+msgstr "Petak"
 
 #: getfeed.php:126
 msgid "Saturday"
-msgstr "Sâmbătă"
+msgstr "Subota"
 
 #: getfeed.php:141
 msgid "Tornado"
-msgstr "Tornadă"
+msgstr "Tornado"
 
 #: getfeed.php:145
 msgid "Tropical Storm"
-msgstr "Furtună Tropicală"
+msgstr "Tropska oluja"
 
 #: getfeed.php:149
 msgid "Hurricane"
@@ -174,160 +174,160 @@ msgstr "Uragan"
 
 #: getfeed.php:153
 msgid "Severe Thunderstorms"
-msgstr "Furtuni Puternice"
+msgstr "Opasna oluja s grmljavinom"
 
 #: getfeed.php:157
 msgid "Thunderstorms"
-msgstr "Furtuni"
+msgstr "Oluja s grmljavinom"
 
 #: getfeed.php:161
 msgid "Mixed Rain and Snow"
-msgstr "Ploaie și Zăpadă"
+msgstr "Kiša i snijeg"
 
 #: getfeed.php:165
 msgid "Mixed Rain and Sleet"
-msgstr "Lapoviță și Ploaie"
+msgstr "Kiša i susnježica"
 
 #: getfeed.php:169
 msgid "Mixed Snow and Sleet"
-msgstr "Lapoviță și Ninsoare"
+msgstr "Snijeg i susnježica"
 
 #: getfeed.php:173
 msgid "Freezing Drizzle"
-msgstr "Burniță"
+msgstr "Sitna ledena kiša"
 
 #: getfeed.php:177
 msgid "Drizzle"
-msgstr "Burniță"
+msgstr "Sitna kiša"
 
 #: getfeed.php:181
 msgid "Freezing Rain"
-msgstr "Ploaie Rece"
+msgstr "Ledena kiša"
 
 #: getfeed.php:185 getfeed.php:189
 msgid "Showers"
-msgstr "Precipitații"
+msgstr "Pljsukovi"
 
 #: getfeed.php:193
 msgid "Snow Flurries"
-msgstr "Fulguie"
+msgstr "Snježni naleti"
 
 #: getfeed.php:197
 msgid "Light Snow Showers"
-msgstr "Ninsori ușoare"
+msgstr "Blagi snijeg"
 
 #: getfeed.php:201
 msgid "Blowing Snow"
-msgstr "Ger"
+msgstr "Snijeg i vjetar"
 
 #: getfeed.php:205
 msgid "Snow"
-msgstr "Zăpadă"
+msgstr "Snijeg"
 
 #: getfeed.php:209
 msgid "Hail"
-msgstr "Grindină"
+msgstr "Tuča"
 
 #: getfeed.php:213
 msgid "Sleet"
-msgstr "Lapoviță"
+msgstr "Susnježica"
 
 #: getfeed.php:217
 msgid "Dust"
-msgstr "Praf"
+msgstr "Prašina"
 
 #: getfeed.php:221
 msgid "Foggy"
-msgstr "Ceață"
+msgstr "Maglovito"
 
 #: getfeed.php:225
 msgid "Haze"
-msgstr "Ceață"
+msgstr "Sumaglica"
 
 #: getfeed.php:229
 msgid "Smoky"
-msgstr "Fum"
+msgstr "Zadimljeno"
 
 #: getfeed.php:233
 msgid "Blustery"
-msgstr "Furtuni"
+msgstr "Blago vjetrovito"
 
 #: getfeed.php:237
 msgid "Windy"
-msgstr "Vânt"
+msgstr "Vjetrovito"
 
 #: getfeed.php:241
 msgid "Cold"
-msgstr "Rece"
+msgstr "Hladno"
 
 #: getfeed.php:245
 msgid "Cloudy"
-msgstr "Noros"
+msgstr "Oblačno"
 
 #: getfeed.php:249 getfeed.php:253
 msgid "Mostly Cloudy"
-msgstr "Predominant Noros"
+msgstr "Jaka naoblaka"
 
 #: getfeed.php:257 getfeed.php:261 getfeed.php:317
 msgid "Partly Cloudy"
-msgstr "Parțial Noros"
+msgstr "Djelomična naoblaka"
 
 #: getfeed.php:265
 msgid "Clear"
-msgstr "Senin"
+msgstr "Vedro"
 
 #: getfeed.php:269
 msgid "Sunny"
-msgstr "Insorit"
+msgstr "Sunčano"
 
 #: getfeed.php:273 getfeed.php:277
 msgid "Fair"
-msgstr "Vreme bună"
+msgstr "Lijepo vrijeme"
 
 #: getfeed.php:281
 msgid "Mixed Rain and Hail"
-msgstr "Ploaie și Grindină"
+msgstr "Kiša i tuča"
 
 #: getfeed.php:285
 msgid "Hot"
-msgstr "Cald"
+msgstr "Vruće"
 
 #: getfeed.php:289
 msgid "Isolated Thunderstorms"
-msgstr "Furtuni Izolate"
+msgstr "Izolirane oluje s grmljavinom"
 
 #: getfeed.php:293 getfeed.php:297
 msgid "Scattered Thunderstorms"
-msgstr "Furtuni Răzlețe"
+msgstr "Povremene oluje s grmljavinom"
 
 #: getfeed.php:301
 msgid "Scattered Showers"
-msgstr "Ploi Răzlețe"
+msgstr "Povremeni pljuskovi"
 
 #: getfeed.php:305 getfeed.php:313
 msgid "Heavy Snow"
-msgstr "Ninsori Abundente"
+msgstr "Jak snijeg"
 
 #: getfeed.php:309
 msgid "Scattered Snow Showers"
-msgstr "Ninsori Izolate"
+msgstr "Mjestimični snježni pljuskovi"
 
 #: getfeed.php:321
 msgid "Thundershowers"
-msgstr "Furtuni"
+msgstr "Oluja s grmljavinom"
 
 #: getfeed.php:325
 msgid "Snow Showers"
-msgstr "Ninsoare"
+msgstr "Snježne oluje"
 
 #: getfeed.php:329
 msgid "Isolated Thundershowers"
-msgstr "Furtuni Izolate"
+msgstr "Izolirani pljuskovi s grmljavinom"
 
 #: getfeed.php:333
 msgid "Not Available"
-msgstr "Indisponibil"
+msgstr "Nema podataka"
 
 #: index.php:33
 msgid "Add weather forecasts to your WP website."
-msgstr "Adaugă prognoza meteo pe site-ul tău WordPress."
+msgstr "Dodajte vremensku prognozu na svoju WP stranicu."

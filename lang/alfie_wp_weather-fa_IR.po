@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather plugin\n"
-"POT-Creation-Date: 2013-11-26 22:46+0100\n"
+"POT-Creation-Date: 2014-04-12 11:59+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Alfie Team <alfie@appcuarium.com>\n"
 "Language-Team: Appcuarium - The Alfie Team <alfie@appcuarium.com>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ../\n"
@@ -47,285 +47,283 @@ msgstr "طلوع آفتاب"
 msgid "Sunset"
 msgstr "غروب آفتاب"
 
-#: alfie-wp-weather.php:119
+#: alfie-wp-weather.php:120
 msgid "Alfie WP Weather widget."
 msgstr "Alfie WP Weather widget."
 
-#: alfie-wp-weather.php:205
+#: alfie-wp-weather.php:217
 msgid "Local Weather"
 msgstr "آب و هوا محلی "
 
-#: alfie-wp-weather.php:224
+#: alfie-wp-weather.php:236
 msgid "Celsius"
 msgstr "سانتیگراد"
 
-#: alfie-wp-weather.php:224
-msgid "Fahreinheit"
+#: alfie-wp-weather.php:236
+msgid "Fahrenheit"
 msgstr "فارنهایت"
 
-#: alfie-wp-weather.php:236
+#: alfie-wp-weather.php:249
 msgid "Title:"
 msgstr "عنوان:"
 
-#: alfie-wp-weather.php:244
+#: alfie-wp-weather.php:257
 msgid "WOEID:"
 msgstr "WOEID:"
 
-#: alfie-wp-weather.php:253
+#: alfie-wp-weather.php:266
 msgid "Search for a location:"
 msgstr "جستجو برای محل سکونت:"
 
-#: alfie-wp-weather.php:257
+#: alfie-wp-weather.php:270
 msgid "Click to search location"
 msgstr "کلیک کنید تا محل جستجو شود"
 
-#: alfie-wp-weather.php:268
+#: alfie-wp-weather.php:281
 msgid "Temperature"
 msgstr "دما"
 
-#: alfie-wp-weather.php:282
+#: alfie-wp-weather.php:294
 msgid "Show image?"
 msgstr "تصویر نمایش داده شود؟"
 
-#: alfie-wp-weather.php:291
+#: alfie-wp-weather.php:302
 msgid "Show country?"
 msgstr "کشور نشان را دهد؟"
 
-#: alfie-wp-weather.php:300
+#: alfie-wp-weather.php:310
 msgid "Show condition?"
 msgstr "بیماری را نشان دهد ؟"
 
-#: alfie-wp-weather.php:309
+#: alfie-wp-weather.php:318
 msgid "Show High/Low info?"
 msgstr "نمایش اطلاعات بیشترین / کمترین؟"
 
-#: alfie-wp-weather.php:318
+#: alfie-wp-weather.php:326
 msgid "Show wind info?"
 msgstr "نمایش اطلاعات باد؟"
 
-#: alfie-wp-weather.php:327
+#: alfie-wp-weather.php:334
 msgid "Show humidity info?"
 msgstr "نمایش اطلاعات رطوبت؟"
 
-#: alfie-wp-weather.php:336
+#: alfie-wp-weather.php:343
 msgid "Show visibility info?"
 msgstr "نمایش اطلاعات دید؟"
 
-#: alfie-wp-weather.php:345
+#: alfie-wp-weather.php:351
 msgid "Show sunrise info?"
 msgstr "نمایش اطلاعات طلوع آفتاب؟"
 
-#: alfie-wp-weather.php:354
+#: alfie-wp-weather.php:359
 msgid "Show sunset info?"
 msgstr "نمایش اطلاعات غروب آفتاب؟"
 
-#: alfie-wp-weather.php:363
+#: alfie-wp-weather.php:367
 msgid "Show forecast?"
 msgstr "نمایش پیش بینی؟"
 
-#: alfie-wp-weather.php:372
-#, fuzzy
+#: alfie-wp-weather.php:376
 msgid "Show forecast images?"
 msgstr "نمایش پیش بینی؟"
 
-#: alfie-wp-weather.php:381
-#, fuzzy
+#: alfie-wp-weather.php:384
 msgid "Show credits footer?"
 msgstr "نمایش اطلاعات طلوع آفتاب؟"
 
-#: getfeed.php:96
+#: getfeed.php:102
 msgid "Sunday"
 msgstr "یکشنبه"
 
-#: getfeed.php:100
+#: getfeed.php:106
 msgid "Monday"
 msgstr "دوشنبه"
 
-#: getfeed.php:104
+#: getfeed.php:110
 msgid "Tuesday"
 msgstr "سه شنبه"
 
-#: getfeed.php:108
+#: getfeed.php:114
 msgid "Wednesday"
 msgstr "چهارشنبه"
 
-#: getfeed.php:112
+#: getfeed.php:118
 msgid "Thursday"
 msgstr "پنجشنبه"
 
-#: getfeed.php:116
+#: getfeed.php:122
 msgid "Friday"
 msgstr "جمعه"
 
-#: getfeed.php:120
+#: getfeed.php:126
 msgid "Saturday"
 msgstr "شنبه"
 
-#: getfeed.php:136
+#: getfeed.php:141
 msgid "Tornado"
 msgstr "گردباد"
 
-#: getfeed.php:140
+#: getfeed.php:145
 msgid "Tropical Storm"
 msgstr "طوفان گرمسیری"
 
-#: getfeed.php:144
+#: getfeed.php:149
 msgid "Hurricane"
 msgstr "طوفان"
 
-#: getfeed.php:148
+#: getfeed.php:153
 msgid "Severe Thunderstorms"
 msgstr "رعد و برق شدید"
 
-#: getfeed.php:152
+#: getfeed.php:157
 msgid "Thunderstorms"
 msgstr "رعد و برق"
 
-#: getfeed.php:156
+#: getfeed.php:161
 msgid "Mixed Rain and Snow"
 msgstr "مخلوط باران و برف"
 
-#: getfeed.php:160
+#: getfeed.php:165
 msgid "Mixed Rain and Sleet"
 msgstr "مخلوط باران و برف و باران"
 
-#: getfeed.php:164
+#: getfeed.php:169
 msgid "Mixed Snow and Sleet"
 msgstr "مخلوط برف و برف و باران"
 
-#: getfeed.php:168
+#: getfeed.php:173
 msgid "Freezing Drizzle"
 msgstr "روی کیک انجماد"
 
-#: getfeed.php:172
+#: getfeed.php:177
 msgid "Drizzle"
 msgstr "نم نم باران"
 
-#: getfeed.php:176
+#: getfeed.php:181
 msgid "Freezing Rain"
 msgstr "بارانی انجماد"
 
-#: getfeed.php:180 getfeed.php:184
+#: getfeed.php:185 getfeed.php:189
 msgid "Showers"
 msgstr "رگبار"
 
-#: getfeed.php:188
+#: getfeed.php:193
 msgid "Snow Flurries"
 msgstr "برف وزش ناگهانی باد"
 
-#: getfeed.php:192
+#: getfeed.php:197
 msgid "Light Snow Showers"
 msgstr "بارش برف نور"
 
-#: getfeed.php:196
+#: getfeed.php:201
 msgid "Blowing Snow"
 msgstr "بارش برف"
 
-#: getfeed.php:200
+#: getfeed.php:205
 msgid "Snow"
 msgstr "برفی"
 
-#: getfeed.php:204
+#: getfeed.php:209
 msgid "Hail"
 msgstr "تگرگ"
 
-#: getfeed.php:208
+#: getfeed.php:213
 msgid "Sleet"
 msgstr "برف و باران"
 
-#: getfeed.php:212
+#: getfeed.php:217
 msgid "Dust"
 msgstr "گرد و غبار"
 
-#: getfeed.php:216
+#: getfeed.php:221
 msgid "Foggy"
 msgstr "مه آلود"
 
-#: getfeed.php:220
+#: getfeed.php:225
 msgid "Haze"
 msgstr "رقیق"
 
-#: getfeed.php:224
+#: getfeed.php:229
 msgid "Smoky"
 msgstr "دودآلود"
 
-#: getfeed.php:228
+#: getfeed.php:233
 msgid "Blustery"
 msgstr "باد"
 
-#: getfeed.php:232
+#: getfeed.php:237
 msgid "Windy"
 msgstr "باد می وزد"
 
-#: getfeed.php:236
+#: getfeed.php:241
 msgid "Cold"
 msgstr "سرد"
 
-#: getfeed.php:240
+#: getfeed.php:245
 msgid "Cloudy"
 msgstr "ابری"
 
-#: getfeed.php:244 getfeed.php:248
+#: getfeed.php:249 getfeed.php:253
 msgid "Mostly Cloudy"
 msgstr "بیشتر ابری"
 
-#: getfeed.php:252 getfeed.php:256 getfeed.php:312
+#: getfeed.php:257 getfeed.php:261 getfeed.php:317
 msgid "Partly Cloudy"
 msgstr "تا قسمتی ابری"
 
-#: getfeed.php:260
+#: getfeed.php:265
 msgid "Clear"
 msgstr "صاف"
 
-#: getfeed.php:264
+#: getfeed.php:269
 msgid "Sunny"
 msgstr "آفتابی"
 
-#: getfeed.php:268 getfeed.php:272
+#: getfeed.php:273 getfeed.php:277
 msgid "Fair"
 msgstr "نسبتا خوب"
 
-#: getfeed.php:276
+#: getfeed.php:281
 msgid "Mixed Rain and Hail"
 msgstr "مخلوط باران و تگرگ"
 
-#: getfeed.php:280
+#: getfeed.php:285
 msgid "Hot"
 msgstr "گرم"
 
-#: getfeed.php:284
+#: getfeed.php:289
 msgid "Isolated Thunderstorms"
 msgstr "رعد و برق جدا"
 
-#: getfeed.php:288 getfeed.php:292
+#: getfeed.php:293 getfeed.php:297
 msgid "Scattered Thunderstorms"
 msgstr "رعد و برق پراکنده"
 
-#: getfeed.php:296
+#: getfeed.php:301
 msgid "Scattered Showers"
 msgstr "رگبار پراکنده"
 
-#: getfeed.php:300 getfeed.php:308
+#: getfeed.php:305 getfeed.php:313
 msgid "Heavy Snow"
 msgstr "برف سنگین"
 
-#: getfeed.php:304
+#: getfeed.php:309
 msgid "Scattered Snow Showers"
 msgstr "بارش برف پراکنده"
 
-#: getfeed.php:316
+#: getfeed.php:321
 msgid "Thundershowers"
 msgstr "رعد و برق"
 
-#: getfeed.php:320
+#: getfeed.php:325
 msgid "Snow Showers"
 msgstr "بارش برف"
 
-#: getfeed.php:324
+#: getfeed.php:329
 msgid "Isolated Thundershowers"
 msgstr "رعد و برق جدا"
 
-#: getfeed.php:328
+#: getfeed.php:333
 msgid "Not Available"
 msgstr "در دسترس نیست"
 

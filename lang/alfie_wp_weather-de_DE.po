@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Alfie WP Weather plugin\n"
-"POT-Creation-Date: 2013-11-26 22:42+0100\n"
+"POT-Creation-Date: 2014-04-12 12:14+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Alfie Team <alfie@appcuarium.com>\n"
 "Language-Team: Appcuarium - The Alfie Team <alfie@appcuarium.com>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ../\n"
@@ -47,285 +47,283 @@ msgstr "Sonnenaufgang"
 msgid "Sunset"
 msgstr "Sonnenuntergang"
 
-#: alfie-wp-weather.php:119
+#: alfie-wp-weather.php:120
 msgid "Alfie WP Weather widget."
 msgstr "Alfie WP Weather widget."
 
-#: alfie-wp-weather.php:205
+#: alfie-wp-weather.php:217
 msgid "Local Weather"
 msgstr "Lokales Wetter"
 
-#: alfie-wp-weather.php:224
+#: alfie-wp-weather.php:236
 msgid "Celsius"
 msgstr "Celsius"
 
-#: alfie-wp-weather.php:224
-msgid "Fahreinheit"
+#: alfie-wp-weather.php:236
+msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
-#: alfie-wp-weather.php:236
+#: alfie-wp-weather.php:249
 msgid "Title:"
 msgstr "Titel:"
 
-#: alfie-wp-weather.php:244
+#: alfie-wp-weather.php:257
 msgid "WOEID:"
 msgstr "WOEID:"
 
-#: alfie-wp-weather.php:253
+#: alfie-wp-weather.php:266
 msgid "Search for a location:"
 msgstr "Suche nach Standort:"
 
-#: alfie-wp-weather.php:257
+#: alfie-wp-weather.php:270
 msgid "Click to search location"
 msgstr "Klicke um Standort zu suchen"
 
-#: alfie-wp-weather.php:268
+#: alfie-wp-weather.php:281
 msgid "Temperature"
 msgstr "Temperatur"
 
-#: alfie-wp-weather.php:282
+#: alfie-wp-weather.php:294
 msgid "Show image?"
 msgstr "Zeige Bild?"
 
-#: alfie-wp-weather.php:291
+#: alfie-wp-weather.php:302
 msgid "Show country?"
 msgstr "Zeige Land?"
 
-#: alfie-wp-weather.php:300
+#: alfie-wp-weather.php:310
 msgid "Show condition?"
 msgstr "Zeige Bedingungen?"
 
-#: alfie-wp-weather.php:309
+#: alfie-wp-weather.php:318
 msgid "Show High/Low info?"
 msgstr "Zeige Max/Min Information?"
 
-#: alfie-wp-weather.php:318
+#: alfie-wp-weather.php:326
 msgid "Show wind info?"
 msgstr "Zeige Wind Information?"
 
-#: alfie-wp-weather.php:327
+#: alfie-wp-weather.php:334
 msgid "Show humidity info?"
 msgstr "Zeige Luftfeuchte Information?"
 
-#: alfie-wp-weather.php:336
+#: alfie-wp-weather.php:343
 msgid "Show visibility info?"
 msgstr "Zeige Sicht Information?"
 
-#: alfie-wp-weather.php:345
+#: alfie-wp-weather.php:351
 msgid "Show sunrise info?"
 msgstr "Zeige Sonnenaufgang Information?"
 
-#: alfie-wp-weather.php:354
+#: alfie-wp-weather.php:359
 msgid "Show sunset info?"
 msgstr "Zeige Sonnenuntergang Information?"
 
-#: alfie-wp-weather.php:363
+#: alfie-wp-weather.php:367
 msgid "Show forecast?"
 msgstr "Zeige Wind Information?"
 
-#: alfie-wp-weather.php:372
-#, fuzzy
+#: alfie-wp-weather.php:376
 msgid "Show forecast images?"
 msgstr "Zeige Wind Information?"
 
-#: alfie-wp-weather.php:381
-#, fuzzy
+#: alfie-wp-weather.php:384
 msgid "Show credits footer?"
 msgstr "Zeige Sonnenaufgang Information?"
 
-#: getfeed.php:90
+#: getfeed.php:102
 msgid "Sunday"
 msgstr "Sonntag"
 
-#: getfeed.php:94
+#: getfeed.php:106
 msgid "Monday"
 msgstr "Montag"
 
-#: getfeed.php:98
+#: getfeed.php:110
 msgid "Tuesday"
 msgstr "Dienstag"
 
-#: getfeed.php:102
+#: getfeed.php:114
 msgid "Wednesday"
 msgstr "Mittwoch"
 
-#: getfeed.php:106
+#: getfeed.php:118
 msgid "Thursday"
 msgstr "Donnerstag"
 
-#: getfeed.php:110
+#: getfeed.php:122
 msgid "Friday"
 msgstr "Freitag"
 
-#: getfeed.php:114
+#: getfeed.php:126
 msgid "Saturday"
 msgstr "Samstag"
 
-#: getfeed.php:130
+#: getfeed.php:141
 msgid "Tornado"
 msgstr "Tornado"
 
-#: getfeed.php:134
+#: getfeed.php:145
 msgid "Tropical Storm"
 msgstr "Tropensturm"
 
-#: getfeed.php:138
+#: getfeed.php:149
 msgid "Hurricane"
 msgstr "Hurricane"
 
-#: getfeed.php:142
+#: getfeed.php:153
 msgid "Severe Thunderstorms"
 msgstr "Heftige Gewitter"
 
-#: getfeed.php:146
+#: getfeed.php:157
 msgid "Thunderstorms"
 msgstr "Gewitterstürme"
 
-#: getfeed.php:150
+#: getfeed.php:161
 msgid "Mixed Rain and Snow"
 msgstr "Regen / Schnee"
 
-#: getfeed.php:154
+#: getfeed.php:165
 msgid "Mixed Rain and Sleet"
 msgstr "Regen / Schneeregen"
 
-#: getfeed.php:158
+#: getfeed.php:169
 msgid "Mixed Snow and Sleet"
 msgstr "Schnee / Schneeregen"
 
-#: getfeed.php:162
+#: getfeed.php:173
 msgid "Freezing Drizzle"
 msgstr "Gefrierender Niesel"
 
-#: getfeed.php:166
+#: getfeed.php:177
 msgid "Drizzle"
 msgstr "Niesel"
 
-#: getfeed.php:170
+#: getfeed.php:181
 msgid "Freezing Rain"
 msgstr "Gefrierender Regen"
 
-#: getfeed.php:174 getfeed.php:178
+#: getfeed.php:185 getfeed.php:189
 msgid "Showers"
 msgstr "Regenschauer"
 
-#: getfeed.php:182
+#: getfeed.php:193
 msgid "Snow Flurries"
 msgstr "Schneegestöber"
 
-#: getfeed.php:186
+#: getfeed.php:197
 msgid "Light Snow Showers"
 msgstr "Leichter Schneefall"
 
-#: getfeed.php:190
+#: getfeed.php:201
 msgid "Blowing Snow"
 msgstr "Schneegestöber"
 
-#: getfeed.php:194
+#: getfeed.php:205
 msgid "Snow"
 msgstr "Schnee"
 
-#: getfeed.php:198
+#: getfeed.php:209
 msgid "Hail"
 msgstr "Hagel"
 
-#: getfeed.php:202
+#: getfeed.php:213
 msgid "Sleet"
 msgstr "Schneeregen"
 
-#: getfeed.php:206
+#: getfeed.php:217
 msgid "Dust"
 msgstr "Staub"
 
-#: getfeed.php:210
+#: getfeed.php:221
 msgid "Foggy"
 msgstr "Neblig"
 
-#: getfeed.php:214
+#: getfeed.php:225
 msgid "Haze"
 msgstr "Dunst"
 
-#: getfeed.php:218
+#: getfeed.php:229
 msgid "Smoky"
 msgstr "Rauchig"
 
-#: getfeed.php:222
+#: getfeed.php:233
 msgid "Blustery"
 msgstr "Stürmisch"
 
-#: getfeed.php:226
+#: getfeed.php:237
 msgid "Windy"
 msgstr "Windig"
 
-#: getfeed.php:230
+#: getfeed.php:241
 msgid "Cold"
 msgstr "Kalt"
 
-#: getfeed.php:234
+#: getfeed.php:245
 msgid "Cloudy"
 msgstr "Bewölkt"
 
-#: getfeed.php:238 getfeed.php:242
+#: getfeed.php:249 getfeed.php:253
 msgid "Mostly Cloudy"
 msgstr "Überwiegend bewölkt"
 
-#: getfeed.php:246 getfeed.php:250 getfeed.php:306
+#: getfeed.php:257 getfeed.php:261 getfeed.php:317
 msgid "Partly Cloudy"
 msgstr "Teilweise bewölkt"
 
-#: getfeed.php:254
+#: getfeed.php:265
 msgid "Clear"
 msgstr "Klar"
 
-#: getfeed.php:258
+#: getfeed.php:269
 msgid "Sunny"
 msgstr "Sonnig"
 
-#: getfeed.php:262 getfeed.php:266
+#: getfeed.php:273 getfeed.php:277
 msgid "Fair"
 msgstr "Mild"
 
-#: getfeed.php:270
+#: getfeed.php:281
 msgid "Mixed Rain and Hail"
 msgstr "Regen / Hagel"
 
-#: getfeed.php:274
+#: getfeed.php:285
 msgid "Hot"
 msgstr "Heiß"
 
-#: getfeed.php:278
+#: getfeed.php:289
 msgid "Isolated Thunderstorms"
 msgstr "Vereinzelte Gewitterstürme"
 
-#: getfeed.php:282 getfeed.php:286
+#: getfeed.php:293 getfeed.php:297
 msgid "Scattered Thunderstorms"
 msgstr "Vereinzelte Gewitterstürme"
 
-#: getfeed.php:290
+#: getfeed.php:301
 msgid "Scattered Showers"
 msgstr "Vereinzelte Schauer"
 
-#: getfeed.php:294 getfeed.php:302
+#: getfeed.php:305 getfeed.php:313
 msgid "Heavy Snow"
 msgstr "Heftiger Schneefall"
 
-#: getfeed.php:298
+#: getfeed.php:309
 msgid "Scattered Snow Showers"
 msgstr "Vereinzelte Schneeschauer"
 
-#: getfeed.php:310
+#: getfeed.php:321
 msgid "Thundershowers"
 msgstr "Gewitterschauer"
 
-#: getfeed.php:314
+#: getfeed.php:325
 msgid "Snow Showers"
 msgstr "Schneeschauer"
 
-#: getfeed.php:318
+#: getfeed.php:329
 msgid "Isolated Thundershowers"
 msgstr "Vereinzelte Gewitterschauer"
 
-#: getfeed.php:322
+#: getfeed.php:333
 msgid "Not Available"
 msgstr "Nicht verfügbar"
 

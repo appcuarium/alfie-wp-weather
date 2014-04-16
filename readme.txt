@@ -3,8 +3,8 @@ Contributors: appcuarium
 Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
-Tested up to: 3.8
-Stable tag: 1.0.15
+Tested up to: 3.9
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,9 @@ The plugin and widget are translated into the following languages:
 * German
 * Persian
 * Greek
+* Croatian
+* Catalan
+* French
 
 More translations and cool features coming soon.
 
@@ -80,6 +83,23 @@ You should enable allow_url_fopen in your server configuration, as it is needed 
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Fixed an issue with the main condition image display
+* Tested for compatibility with WordPress 3.9
+
+= 1.1.0 =
+
+* Added Croatian language ( H. Felbar )
+* Added Catalan translation
+* Added French translation
+* Corrected a forecast styling issue that could appear on certain installations
+* Corrected a typo in Fahrenheit
+* Updated translation files
+* Fixed text positioning relative to the main image
+* Checked compatibility with WordPress 3.8.2
+* Code improvement
 
 = 1.0.15 =
 

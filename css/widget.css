@@ -8,6 +8,7 @@
     color: #000 !important;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
+    position: relative;
 }
 
 .alfie-container a {
@@ -26,6 +27,7 @@
     background-size: 100%;
     padding-top: 20px;
     position: relative;
+    z-index: 999;
 }
 
 .alfie-wp-weather-item {
@@ -122,6 +124,9 @@
     font-size: 8px;
     line-height: 8px;
     margin: 0;
+    list-style-type: none!important;
+    background: none!important;
+    padding: 0!important;
 }
 
 .alfie-wp-weather-footer ul li strong {
@@ -155,4 +160,5 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
 }

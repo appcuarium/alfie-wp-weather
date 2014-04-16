@@ -8,12 +8,12 @@ Alfie ® Platform SDK
 ====== Apps outside the box.® ======
 
 ------------------------------------
-Copyright © 2012-2013 Appcuarium
+Copyright © 2012-2014 Appcuarium
 ------------------------------------
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.0.15
+@version 1.1.1
 
 ====================================
 
