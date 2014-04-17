@@ -79,7 +79,7 @@ msgstr "Zoeken naar een locatie:"
 
 #: alfie-wp-weather.php:270
 msgid "Click to search location"
-msgstr "Klik om locatie zoeken"
+msgstr "Klik om locatie te zoeken"
 
 #: alfie-wp-weather.php:281
 msgid "Temperature"
@@ -87,51 +87,51 @@ msgstr "Temperatuur"
 
 #: alfie-wp-weather.php:294
 msgid "Show image?"
-msgstr "Toon afbeelding?"
+msgstr "Afbeelding tonen?"
 
 #: alfie-wp-weather.php:302
 msgid "Show country?"
-msgstr "Toon land?"
+msgstr "Land tonen?"
 
 #: alfie-wp-weather.php:310
 msgid "Show condition?"
-msgstr "Toon conditie?"
+msgstr "Conditie tonen?"
 
 #: alfie-wp-weather.php:318
 msgid "Show High/Low info?"
-msgstr "Show Hoog / Laag info?"
+msgstr "Hoog / Laag info tonen?"
 
 #: alfie-wp-weather.php:326
 msgid "Show wind info?"
-msgstr "Toon wind info?"
+msgstr "Wind info tonen?"
 
 #: alfie-wp-weather.php:334
 msgid "Show humidity info?"
-msgstr "Toon luchtvochtigheid info?"
+msgstr "Luchtvochtigheid info tonen?"
 
 #: alfie-wp-weather.php:343
 msgid "Show visibility info?"
-msgstr "Toon zichtbaarheid info?"
+msgstr "Zichtbaarheid info tonen?"
 
 #: alfie-wp-weather.php:351
 msgid "Show sunrise info?"
-msgstr "Toon zonsopgang info?"
+msgstr "Zonsopgang info tonen?"
 
 #: alfie-wp-weather.php:359
 msgid "Show sunset info?"
-msgstr "Toon zonsondergang info?"
+msgstr "Zonsondergang info tonen?"
 
 #: alfie-wp-weather.php:367
 msgid "Show forecast?"
-msgstr "Toon voorspelling?"
+msgstr "Weersverwachting tonen?"
 
 #: alfie-wp-weather.php:376
 msgid "Show forecast images?"
-msgstr "Toon prognose beelden?"
+msgstr "Weersverwachting afbeelding tonen?"
 
 #: alfie-wp-weather.php:384
 msgid "Show credits footer?"
-msgstr "Toon kredieten voettekst?"
+msgstr "Aftiteling voettekst tonen?"
 
 #: getfeed.php:102
 msgid "Sunday"
@@ -183,15 +183,15 @@ msgstr "Onweersbuien"
 
 #: getfeed.php:161
 msgid "Mixed Rain and Snow"
-msgstr "Gemengde Regen en Sneeuw"
+msgstr "Regen en Sneeuw"
 
 #: getfeed.php:165
 msgid "Mixed Rain and Sleet"
-msgstr "Gemengde Regen en Ijzel"
+msgstr "Regen en Ijzel"
 
 #: getfeed.php:169
 msgid "Mixed Snow and Sleet"
-msgstr "Gemengde Sneeuw en Ijzel"
+msgstr "Sneeuw en Ijzel"
 
 #: getfeed.php:173
 msgid "Freezing Drizzle"
@@ -207,7 +207,7 @@ msgstr "Sneeuwbuien"
 
 #: getfeed.php:185 getfeed.php:189
 msgid "Showers"
-msgstr "Douches"
+msgstr "Regenbui"
 
 #: getfeed.php:193
 msgid "Snow Flurries"
@@ -275,7 +275,7 @@ msgstr "Gedeeltelijk Bewolkt"
 
 #: getfeed.php:265
 msgid "Clear"
-msgstr "Duidelijk"
+msgstr "Onbewolkt"
 
 #: getfeed.php:269
 msgid "Sunny"
@@ -283,11 +283,11 @@ msgstr "Zonnig"
 
 #: getfeed.php:273 getfeed.php:277
 msgid "Fair"
-msgstr "Eerlijk"
+msgstr "Geldig"
 
 #: getfeed.php:281
 msgid "Mixed Rain and Hail"
-msgstr "Gemengde Regen en Hagel"
+msgstr "Regen en Hagel"
 
 #: getfeed.php:285
 msgid "Hot"
@@ -295,11 +295,11 @@ msgstr "Heet"
 
 #: getfeed.php:289
 msgid "Isolated Thunderstorms"
-msgstr "Onweersbuien"
+msgstr "Geïsoleerde Onweersbuien"
 
 #: getfeed.php:293 getfeed.php:297
 msgid "Scattered Thunderstorms"
-msgstr "Onweersbuien"
+msgstr "Verspreide Onweersbuien"
 
 #: getfeed.php:301
 msgid "Scattered Showers"
@@ -331,4 +331,4 @@ msgstr "Niet Beschikbaar"
 
 #: index.php:33
 msgid "Add weather forecasts to your WP website."
-msgstr "Voeg weersvoorspellingen aan uw WP website."
+msgstr "Toevoeg weersvoorspellingen aan uw WP website."

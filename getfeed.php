@@ -13,7 +13,7 @@ Copyright © 2012-2014 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.1.1
+@version 1.2.0
 									
 ====================================
 
@@ -22,51 +22,16 @@ Alfie Weather JSON helper
 */
 header( 'Content-type: application/json' );
 
-// Load WP classes so we can translate the strings usin WordPress native double underscore function
+// Load WP classes so we can translate the strings using WordPress native double underscore function.
 require_once( '../../../wp-load.php' );
 
-// Get the locale value from the AJAX call
-$locale = $_GET['locale'];
-switch ( $locale ) {
+// Get the locale value from the AJAX call and convert it to short locale.
+$locale = substr( sanitize_text_field( $_GET[ 'locale' ] ), 0, -3 );
 
-    case 'en_US':
-        $locale = 'en';
-        break;
-    case 'es_ES':
-        $locale = 'es';
-        break;
-    case 'el_GR':
-        $locale = 'el';
-        break;
-    case 'ro_RO':
-        $locale = 'ro';
-        break;
-    case 'de_DE':
-        $locale = 'de';
-        break;
-    case 'it_IT':
-        $locale = 'it';
-        break;
-    case 'fa_IR':
-        $locale = 'fa';
-        break;
-    case 'ro_MO':
-        $locale = 'mo';
-        break;
-    case 'fr_FR':
-        $locale = 'fr';
-        break;
-    case 'da_DK':
-        $locale = 'da';
-        break;
-    case 'nl_NL':
-        $locale = 'nl';
-        break;
-}
-// Load the WPML global object
+// Load the WPML global object.
 global $sitepress;
 
-//Change language to call language if WMPL is active
+//Change language to call language if WMPL is active.
 if ( $sitepress ) {
 
     $sitepress->switch_lang( $locale, true );
@@ -76,31 +41,31 @@ if ( $sitepress ) {
 // Load textomain locally
 load_plugin_textdomain( 'alfie_wp_weather', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 
-// Create date to append to the API call URL so it caches for an hour
+// Create date to append to the API call URL so it caches for an hour.
 $random = date( 'Ymdh' );
 
-// Get the location
-$woeid = $_GET['woeid'];
+// Get the location.
+$woeid = sanitize_text_field( $_GET[ 'woeid' ] );
 
-// Get the temperature unit
-$u = $_GET['unit'];
+// Get the temperature unit.
+$u = sanitize_text_field( $_GET[ 'unit' ] );
 
-// Properly encode the query to the Yahoo! database
+// Properly encode the query to the Yahoo! database.
 $q = rawurlencode( "select * from weather.forecast where woeid in('$woeid') and u='$u'" );
 
-// Build the query URL
+// Build the query URL.
 $api = "http://query.yahooapis.com/v1/public/yql?q=" . $q . "&rnd=" . $random . "&format=json";
 
-// Get the JSON encoded response from Yahoo! API
+// Get the JSON encoded response from Yahoo! API.
 $json = file_get_contents( $api, 0, null, null );
 
-// Decode the response so we can translate the condition codes and week days
+// Decode the response so we can translate the condition codes and week days.
 $decoded = json_decode( $json );
 
-// Make the variable base
+// Make the variable base.
 $object = $decoded->query->results->channel;
 
-// Function that translates the names of the week days returned by Yahoo!
+// Function that translates the names of the week days returned by Yahoo!.
 function translate_day( $dayname ) {
 
     switch ( $dayname ) {
@@ -138,10 +103,10 @@ function translate_day( $dayname ) {
     return $dayname;
 }
 
-// Function to translate the returned condition names
+// Function to translate the returned condition names.
 function translate_condition( $condition ) {
 
-    // Condition codes are integers
+    // Condition codes are integers...
     switch ( $condition ) {
 
         case 0:
@@ -346,7 +311,7 @@ function translate_condition( $condition ) {
     return $condition;
 }
 
-// Rebuild the array, including now the localized values
+// Rebuild the array, including now the localized values.
 $result = array(
     'data' => array(
         'woeid' => $woeid,
@@ -403,20 +368,20 @@ $result = array(
             'description' => $object->item->description,
             'forecast' => array(
                 'today' => array(
-                    'code' => $object->item->forecast[0]->code,
-                    'date' => $object->item->forecast[0]->date,
-                    'day' => translate_day( $object->item->forecast[0]->day ),
-                    'high' => $object->item->forecast[0]->high,
-                    'low' => $object->item->forecast[0]->low,
-                    'text' => translate_condition( $object->item->forecast[0]->code )
+                    'code' => $object->item->forecast[ 0 ]->code,
+                    'date' => $object->item->forecast[ 0 ]->date,
+                    'day' => translate_day( $object->item->forecast[ 0 ]->day ),
+                    'high' => $object->item->forecast[ 0 ]->high,
+                    'low' => $object->item->forecast[ 0 ]->low,
+                    'text' => translate_condition( $object->item->forecast[ 0 ]->code )
                 ),
                 'tomorrow' => array(
-                    'code' => $object->item->forecast[1]->code,
-                    'date' => $object->item->forecast[1]->date,
-                    'day' => translate_day( $object->item->forecast[1]->day ),
-                    'high' => $object->item->forecast[1]->high,
-                    'low' => $object->item->forecast[1]->low,
-                    'text' => translate_condition( $object->item->forecast[1]->code )
+                    'code' => $object->item->forecast[ 1 ]->code,
+                    'date' => $object->item->forecast[ 1 ]->date,
+                    'day' => translate_day( $object->item->forecast[ 1 ]->day ),
+                    'high' => $object->item->forecast[ 1 ]->high,
+                    'low' => $object->item->forecast[ 1 ]->low,
+                    'text' => translate_condition( $object->item->forecast[ 1 ]->code )
                 ),
             ),
             'guid' => array(
@@ -426,7 +391,7 @@ $result = array(
         )
     )
 );
-// Encode the array
+// Encode the array.
 echo( json_encode( $result ) );
 
 // Done.

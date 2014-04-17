@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Alfie WP Weather Widget 1.1.1
+ * Alfie WP Weather Widget 1.2.0
 
  */
 
@@ -141,11 +141,11 @@ class alfie_wp_weather_widget extends WP_Widget {
         }
         if ( is_active_widget( false, false, $this->id_base ) && !has_shortcode( $post->post_content, 'alfie_wp_weather' ) ) {
 
-            wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.css' );
+            wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );
             wp_enqueue_script( 'jquery' );
-            wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie.weather.js' );
+            wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
             wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER[ 'HTTP_HOST' ], '', plugins_url() ) ) );
-            wp_enqueue_script( 'alfie-wp-admin', ALFIE_WEATHER_URL . 'js/alfie-weather.js' );
+            wp_enqueue_script( 'alfie-wp-admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
             wp_localize_script( 'alfie-wp-admin', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER[ 'HTTP_HOST' ], '', plugins_url() ) ) );
 
         }
@@ -208,9 +208,8 @@ class alfie_wp_weather_widget extends WP_Widget {
     }
 
     function form( $instance ) {
-        wp_enqueue_style( 'alfie_weatheroptions', ALFIE_WEATHER_URL . 'css/admin.css', false, 0.7, 'screen' );
-        // wp_enqueue_script( 'alfie-wp-weatherclass_admin', ALFIE_WEATHER_URL . 'js/alfie.weather.js' );
-        wp_enqueue_script( 'alfie-wp-weather_admin', ALFIE_WEATHER_URL . 'js/alfie-weather.js' );
+        wp_enqueue_style( 'alfie_weatheroptions', ALFIE_WEATHER_URL . 'css/admin.min.css', false, 0.7, 'screen' );
+        wp_enqueue_script( 'alfie-wp-weather_admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
 
         $defaults = array(
             'title' => __( 'Local Weather', 'alfie_wp_weather' ),
@@ -241,9 +240,6 @@ class alfie_wp_weather_widget extends WP_Widget {
 				<a>{{location}} - {{country}}</span>
 			</li>
 
-
-
-
         </script>
         <div class="widget-controls">
             <p>
@@ -273,7 +269,6 @@ class alfie_wp_weather_widget extends WP_Widget {
 
                 <div id="weatherList"></div>
                 <div id="cities"></div>
-
             </div>
             <br/>
 

@@ -48,7 +48,7 @@ if ( typeof Object.create !== 'function' ) {
         // Receive scope and action and route input based on values
         route: function () {
             var me = this,
-            action = me.options.action;
+                action = me.options.action;
             return me.executeQuery( action );
 
         },
@@ -59,12 +59,9 @@ if ( typeof Object.create !== 'function' ) {
 
             if ( typeof action === 'string' ) {
 
-                var array = action.split( /[ ,]+/ ),
-                    count = array.length;
+                var array = action.split( /[ ,]+/ );
 
-                return $.when( me[array].call( me ) ).done( function ( response ) {
-
-                } );
+                return me[array].call( me );
             }
 
             else if ( typeof action === 'object' ) {
@@ -101,7 +98,7 @@ if ( typeof Object.create !== 'function' ) {
             }
         },
 
-        searchDelayed: function ( term ) {
+        searchDelayed: function () {
             var me = this;
             me.searchInput.on( 'keyup', me.search );
         },
@@ -110,7 +107,7 @@ if ( typeof Object.create !== 'function' ) {
             var self = Alfie,
                 input = this,
                 now = new Date(),
-                query = 'select * from geo.places where text="' + self.query + '"',
+                query = 'select * from geo.places where text="' + input.value + '"',
                 api = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent( query ) + '&rnd=' + now.getFullYear() + now.getMonth() + now.getDay() + now.getHours() + '&format=json&callback=?',
                 dfd = $.Deferred();
 
@@ -118,9 +115,8 @@ if ( typeof Object.create !== 'function' ) {
 
             self.timer = ( input.value.length >= 3 ) && setTimeout( function () {
 
-                self.query = input.value;
+                $.when( self.fetch( api, 'json', null ) ).then( function ( response ) {
 
-                $.when( self.fetch( api, 'json' ) ).then( function ( response ) {
                     $.when( self.build( response ) ).done( function ( resp ) {
                         $( '#widgets-right #cities' ).html( resp );
                     } );
@@ -141,10 +137,10 @@ if ( typeof Object.create !== 'function' ) {
         },
         getTimeAsDate: function ( t ) {
 
-            var d = new Date(),
-                r = new Date( d.toDateString() + ' ' + t );
+            var d = new Date();
 
-            return r;
+            return new Date( d.toDateString() + ' ' + t );
+
         },
 
         build_weather_widget: function ( results ) {
@@ -154,17 +150,19 @@ if ( typeof Object.create !== 'function' ) {
                 widgetTemplate = $.trim( $( '#widget-template' ).html() ),
                 widgetEnvelope = $( '<ul />', {
                     class: 'loaded'
-                } );
+                } ),
+                daynight,
+                obj = $.map( results, function ( result, i ) {
 
-            var obj = $.map( results, function ( result, i ) {
-                // Day or night?
-                wpd = result.item.pubDate;
-                n = wpd.indexOf( ":" );
-                tpb = me.getTimeAsDate( wpd.substr( n - 2, 8 ) );
-                tsr = me.getTimeAsDate( result.astronomy.sunrise );
-                tss = me.getTimeAsDate( result.astronomy.sunset );
+                var wpd = result.item.pubDate,
+                    n = wpd.indexOf( ":" ),
+                    tpb = me.getTimeAsDate( wpd.substr( n - 2, 8 ) ),
+                    tsr = me.getTimeAsDate( result.astronomy.sunrise ),
+                    tss = me.getTimeAsDate( result.astronomy.sunset ),
+                    image_bg = 'http://l.yimg.com/a/i/us/nws/weather/gr/{{condition_code}}';
 
-                // Get night or day
+
+                    // Get night or day
                 if ( tpb > tsr && tpb < tss ) {
                     daynight = 'day';
                 } else {
@@ -223,10 +221,9 @@ if ( typeof Object.create !== 'function' ) {
                 if ( wd >= 326.25 && wd < 348.75 ) {
                     wd = "NNW"
                 }
-                var image_bg = 'http://l.yimg.com/a/i/us/nws/weather/gr/{{condition_code}}';
 
                 if ( result.item.condition.code == 20 ) {
-                    image_bg = 'http://content.appcuarium.com/img/alfie-wp-weather/' + result.item.condition.code;
+                    image_bg = alfie.path + '/alfie-wp-weather/img/' + result.item.condition.code;
                 } else {
                     image_bg = 'http://l.yimg.com/a/i/us/nws/weather/gr/' + result.item.condition.code;
                 }
@@ -296,6 +293,7 @@ if ( typeof Object.create !== 'function' ) {
                 } );
 
             var objects = $.map( results.query.results, function ( result, i ) {
+
                 $.each( result, function ( index, value ) {
                     var entryHTML = template
                         .replace( /{{woeid}}/ig, value.woeid )

@@ -124,9 +124,9 @@
     font-size: 8px;
     line-height: 8px;
     margin: 0;
-    list-style-type: none!important;
-    background: none!important;
-    padding: 0!important;
+    list-style-type: none !important;
+    background: none !important;
+    padding: 0 !important;
 }
 
 .alfie-wp-weather-footer ul li strong {

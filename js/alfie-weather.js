@@ -12,7 +12,7 @@
 
  apps@appcuarium.com
  @author Sorin Gheata
- @version 1.1.1
+ @version 1.2.0
 
  ====================================
 

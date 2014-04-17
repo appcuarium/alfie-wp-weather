@@ -31,7 +31,7 @@ msgstr "Lav"
 
 #: alfie-wp-weather.php:27
 msgid "Wind"
-msgstr "Blæst"
+msgstr "Vind"
 
 #: alfie-wp-weather.php:32
 msgid "Humidity"
@@ -43,15 +43,15 @@ msgstr "Synlighed"
 
 #: alfie-wp-weather.php:38
 msgid "Sunrise"
-msgstr "Sunrise"
+msgstr "Solopgang"
 
 #: alfie-wp-weather.php:41
 msgid "Sunset"
-msgstr "Sunset"
+msgstr "Solnedgang"
 
 #: alfie-wp-weather.php:118
 msgid "Alfie WP Weather widget."
-msgstr "Alfie WP vejr widget."
+msgstr "Alfie WP Weather widget."
 
 #: alfie-wp-weather.php:216
 msgid "Local Weather"
@@ -99,7 +99,7 @@ msgstr "Vis tilstand?"
 
 #: alfie-wp-weather.php:320
 msgid "Show High/Low info?"
-msgstr "Vis High / Low info?"
+msgstr "Vis Høj / Lav info?"
 
 #: alfie-wp-weather.php:328
 msgid "Show wind info?"
@@ -211,7 +211,7 @@ msgstr "Byger"
 
 #: getfeed.php:194
 msgid "Snow Flurries"
-msgstr "Sne Eftermiddag og Aften"
+msgstr "Sne"
 
 #: getfeed.php:198
 msgid "Light Snow Showers"
@@ -227,7 +227,7 @@ msgstr "Sne"
 
 #: getfeed.php:210
 msgid "Hail"
-msgstr "Hail"
+msgstr "Hagl"
 
 #: getfeed.php:214
 msgid "Sleet"
@@ -239,15 +239,15 @@ msgstr "Støv"
 
 #: getfeed.php:222
 msgid "Foggy"
-msgstr "Foggy"
+msgstr "Tåge"
 
 #: getfeed.php:226
 msgid "Haze"
-msgstr "Haze"
+msgstr "Tåge"
 
 #: getfeed.php:230
 msgid "Smoky"
-msgstr "Smoky"
+msgstr "Tåge"
 
 #: getfeed.php:234
 msgid "Blustery"
@@ -259,7 +259,7 @@ msgstr "blæsende"
 
 #: getfeed.php:242
 msgid "Cold"
-msgstr "forkølelse"
+msgstr "Koldt"
 
 #: getfeed.php:246
 msgid "Cloudy"
@@ -267,15 +267,15 @@ msgstr "Overskyet"
 
 #: getfeed.php:250 getfeed.php:254
 msgid "Mostly Cloudy"
-msgstr "Overskyet"
+msgstr "Mest Overskyet"
 
 #: getfeed.php:258 getfeed.php:262 getfeed.php:318
 msgid "Partly Cloudy"
-msgstr "Overskyet"
+msgstr "Delvis Overskyet"
 
 #: getfeed.php:266
 msgid "Clear"
-msgstr "Ryd"
+msgstr "Klart"
 
 #: getfeed.php:270
 msgid "Sunny"
@@ -283,7 +283,7 @@ msgstr "Solrig"
 
 #: getfeed.php:274 getfeed.php:278
 msgid "Fair"
-msgstr "Retfærdig"
+msgstr "Godt"
 
 #: getfeed.php:282
 msgid "Mixed Rain and Hail"
@@ -291,15 +291,15 @@ msgstr "Blandet Regn og Hagl"
 
 #: getfeed.php:286
 msgid "Hot"
-msgstr "Hot"
+msgstr "Varmt"
 
 #: getfeed.php:290
 msgid "Isolated Thunderstorms"
-msgstr "Tordenbyger"
+msgstr "Lokale Tordenbyger"
 
 #: getfeed.php:294 getfeed.php:298
 msgid "Scattered Thunderstorms"
-msgstr "Tordenbyger"
+msgstr "Spredte Tordenbyger"
 
 #: getfeed.php:302
 msgid "Scattered Showers"
@@ -323,7 +323,7 @@ msgstr "Snebyger"
 
 #: getfeed.php:330
 msgid "Isolated Thundershowers"
-msgstr "isolerede thundershowers"
+msgstr "Lokale thunderbyger"
 
 #: getfeed.php:334
 msgid "Not Available"

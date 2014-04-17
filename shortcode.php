@@ -1,4 +1,5 @@
 <?php
+
 /*
 
 ============ appcuarium ============
@@ -13,7 +14,7 @@ Copyright © 2012-2014 Appcuarium
 
 apps@appcuarium.com
 @author Sorin Gheata
-@version 1.1.1
+@version 1.2.0
 
 ====================================
 
@@ -39,20 +40,20 @@ class Alfie_WP_Shortcode {
 
         extract( shortcode_atts(
             array(
-                 'woeid' => '866528',
-                 'image' => true,
-                 'country' => true,
-                 'condition' => true,
-                 'units' => 'c',
-                 'highlow' => true,
-                 'wind' => true,
-                 'humidity' => true,
-                 'visibility' => true,
-                 'sunrise' => true,
-                 'sunset' => true,
-                 'forecast' => true,
-                 'forecast_image' => true,
-                 'credits' => true
+                'woeid' => '866528',
+                'image' => true,
+                'country' => true,
+                'condition' => true,
+                'units' => 'c',
+                'highlow' => true,
+                'wind' => true,
+                'humidity' => true,
+                'visibility' => true,
+                'sunrise' => true,
+                'sunset' => true,
+                'forecast' => true,
+                'forecast_image' => true,
+                'credits' => true
             ), $attributes ) );
 
         $attributes = array(
@@ -72,15 +73,15 @@ class Alfie_WP_Shortcode {
             'alfie_wp_weather_credits' => $credits
         );
 
-        return '<div id="woeid-' . $attributes['woeid'] . '" class="widget-container alfie-container">' . alfie_wp_weather( $attributes ) . '</div>';
+        return '<div id="woeid-' . $attributes[ 'woeid' ] . '" class="widget-container alfie-container">' . alfie_wp_weather( $attributes ) . '</div>';
     }
 
     static function register_script() {
 
         $protocol = 'http';
 
-        if ( isset( $_SERVER['HTTPS'] ) ) {
-            if ( strtoupper( $_SERVER['HTTPS'] ) == 'ON' ) {
+        if ( isset( $_SERVER[ 'HTTPS' ] ) ) {
+            if ( strtoupper( $_SERVER[ 'HTTPS' ] ) == 'ON' ) {
                 $protocol = 'https';
             }
         }
@@ -88,9 +89,9 @@ class Alfie_WP_Shortcode {
         wp_enqueue_style( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'css/widget.min.css' );
         wp_enqueue_script( 'jquery' );
         wp_enqueue_script( 'alfie-wp-weather', ALFIE_WEATHER_URL . 'js/alfie.weather.min.js' );
-        wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER['HTTP_HOST'], '', plugins_url() ) ) );
+        wp_localize_script( 'alfie-wp-weather', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER[ 'HTTP_HOST' ], '', plugins_url() ) ) );
         wp_enqueue_script( 'alfie-wp-admin', ALFIE_WEATHER_URL . 'js/alfie-weather.min.js' );
-        wp_localize_script( 'alfie-wp-admin', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER['HTTP_HOST'], '', plugins_url() ) ) );
+        wp_localize_script( 'alfie-wp-admin', 'alfie', array( 'path' => str_replace( $protocol . '://' . $_SERVER[ 'HTTP_HOST' ], '', plugins_url() ) ) );
 
     }
 

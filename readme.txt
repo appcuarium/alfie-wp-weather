@@ -4,7 +4,7 @@ Donate link: https://secure.savethechildren.org/site/donor.asp
 Tags: weather, forecast
 Requires at least: 3.3
 Tested up to: 3.9
-Stable tag: 1.1.1
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,7 @@ The plugin and widget are translated into the following languages:
 * Catalan
 * French
 * Danish
+* Dutch
 
 More translations and cool features coming soon.
 
@@ -85,8 +86,15 @@ You should enable allow_url_fopen in your server configuration, as it is needed 
 
 == Changelog ==
 
-= 1.1.2 =
+= 1.2.0 =
+
 * Added Danish translation
+* Added Dutch translation
+* Corrected a styling issue that could appear on certain installs
+* Corrected the path to minified styles and scripts
+* Fixed an exception with live WOEID search
+* Global code optimizations
+* Moved image for condition 20 locally
 
 = 1.1.1 =
 
