@@ -56,6 +56,12 @@ switch ( $locale ) {
     case 'fr_FR':
         $locale = 'fr';
         break;
+    case 'da_DK':
+        $locale = 'da';
+        break;
+    case 'nl_NL':
+        $locale = 'nl';
+        break;
 }
 // Load the WPML global object
 global $sitepress;

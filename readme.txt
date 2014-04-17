@@ -29,6 +29,7 @@ The plugin and widget are translated into the following languages:
 * Croatian
 * Catalan
 * French
+* Danish
 
 More translations and cool features coming soon.
 
@@ -83,6 +84,9 @@ You should enable allow_url_fopen in your server configuration, as it is needed 
 3. Dashboard widget location search
 
 == Changelog ==
+
+= 1.1.2 =
+* Added Danish translation
 
 = 1.1.1 =
 
